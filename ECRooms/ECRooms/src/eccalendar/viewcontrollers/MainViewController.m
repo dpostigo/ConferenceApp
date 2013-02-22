@@ -12,46 +12,50 @@
 #import "ALCalendarTileView.h"
 #import "ALCalendar.h"
 #import "ALCalendar.h"
+#import "DayViewExampleController.h"
+#import "DefaultStylesViewController.h"
+#import "CustomTileViewController.h"
 
-
-@interface CustomTileView : ALCalendarTileView
-
-
-@property(nonatomic, strong) UIView *leftView;
-@property(nonatomic, strong) UIColor *leftViewBackgroundColor;
-
-@end
-
-
-@implementation CustomTileView
-
-
-- (id) init {
-    self = [super init];
-    if (self) {
-        self.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent: 0.2];
-        self.leftView = [[UIView alloc] initWithFrame: CGRectZero];
-        [self addSubview: self.leftView];
-
-        self.titleLabel.textColor = [UIColor darkGrayColor];
-    }
-    return self;
-}
-
-
-- (void) layoutSubviews {
-    self.leftView.frame = CGRectMake(0, 0, 10, self.frame.size.height);
-    self.leftView.backgroundColor = self.leftViewBackgroundColor;
-
-    self.titleLabel.frame = CGRectMake(20, 0, self.frame.size.width - 30, 15);
-    self.titleLabel.shadowOffset = CGSizeZero;
-}
-
-@end
+//
+//@interface CustomTileView : ALCalendarTileView
+//
+//
+//@property(nonatomic, strong) UIView *leftView;
+//@property(nonatomic, strong) UIColor *leftViewBackgroundColor;
+//
+//@end
+//
+//
+//@implementation CustomTileView
+//
+//
+//- (id) init {
+//    self = [super init];
+//    if (self) {
+//        self.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent: 0.2];
+//        self.leftView = [[UIView alloc] initWithFrame: CGRectZero];
+//        [self addSubview: self.leftView];
+//
+//        self.titleLabel.textColor = [UIColor darkGrayColor];
+//    }
+//    return self;
+//}
+//
+//
+//- (void) layoutSubviews {
+//    self.leftView.frame = CGRectMake(0, 0, 10, self.frame.size.height);
+//    self.leftView.backgroundColor = self.leftViewBackgroundColor;
+//
+//    self.titleLabel.frame = CGRectMake(20, 0, self.frame.size.width - 30, 15);
+//    self.titleLabel.shadowOffset = CGSizeZero;
+//}
+//
+//@end
 
 
 @interface MainViewController () <ALCalendarDayEventsViewDataSource, ALCalendarDayEventsViewDelegate> {
 
+    IBOutlet UIView *calendarContainer;
     IBOutlet ALCalendarDayView *calendar;
     IBOutlet UIView *plaque1;
     IBOutlet UIView *plaque2;
@@ -68,8 +72,8 @@
     [super loadView];
     NSLog(@"%s", __PRETTY_FUNCTION__);
 
-    [plaque1 addSubview:[[[NSBundle mainBundle] loadNibNamed:@"Plaque1" owner:self options:nil] objectAtIndex:0]];
-    [plaque2 addSubview:[[[NSBundle mainBundle] loadNibNamed:@"Plaque2" owner:self options:nil] objectAtIndex:0]];
+    [plaque1 addSubview: [[[NSBundle mainBundle] loadNibNamed: @"Plaque1" owner: self options: nil] objectAtIndex: 0]];
+    [plaque2 addSubview: [[[NSBundle mainBundle] loadNibNamed: @"Plaque2" owner: self options: nil] objectAtIndex: 0]];
 }
 
 
@@ -79,11 +83,21 @@
     calendar.eventsView.amPmFormat = YES;
     calendar.eventsView.dataSource = self;
     calendar.eventsView.delegate = self;
+
+    calendarContainer.hidden = NO;
+
+    CustomTileViewController *controller = [[CustomTileViewController alloc] init];
+
+    ALCalendarDayView *calendarView = controller.calendarDayView;
+    calendarView.frame = calendarContainer.bounds;
+    [calendarContainer addSubview: calendarView];
+
+    calendarView.eventsView.amPmFormat = YES;
+    calendarView.backgroundColor = [UIColor clearColor];
+    calendarView.eventsView.timeLabelsFont = [UIFont boldSystemFontOfSize: 15.0];
+    calendarView.eventsView.leftMargin = 95.0;
+    calendarView.scrollView.contentSize = CGSizeMake(calendarView.width, calendarView.scrollView.contentSize.height);
 }
-
-
-
-
 
 
 - (NSArray *) calendarEventsForDate: (NSDate *) date {
@@ -117,12 +131,12 @@
     return result;
 }
 
-
-- (ALCalendarTileView *) tileViewForEvent: (ALCalendarEvent *) event {
-    CustomTileView *tileView = [[CustomTileView alloc] init];
-    tileView.leftViewBackgroundColor = event.color;
-    tileView.titleLabel.text = event.title;
-    return tileView;
-}
+//
+//- (ALCalendarTileView *) tileViewForEvent: (ALCalendarEvent *) event {
+//    CustomTileView *tileView = [[CustomTileView alloc] init];
+//    tileView.leftViewBackgroundColor = event.color;
+//    tileView.titleLabel.text = event.title;
+//    return tileView;
+//}
 
 @end
