@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03150128166EB4960025F1F7 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 03150125166EB4960025F1F7 /* assets */; };
+		03150129166EB4960025F1F7 /* scripts in Resources */ = {isa = PBXBuildFile; fileRef = 03150126166EB4960025F1F7 /* scripts */; };
+		0315012A166EB4960025F1F7 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 03150127166EB4960025F1F7 /* src */; };
+		033C39EA167C139A004EC2F1 /* Plaque1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033C39E9167C139A004EC2F1 /* Plaque1.xib */; };
+		0346ACC1166EB0E000A00BC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0346ACC0166EB0E000A00BC4 /* UIKit.framework */; };
+		0346ACC3166EB0E000A00BC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0346ACC2166EB0E000A00BC4 /* Foundation.framework */; };
+		0346ACC5166EB0E000A00BC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0346ACC4166EB0E000A00BC4 /* CoreGraphics.framework */; };
+		0346ACCB166EB0E000A00BC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0346ACC9166EB0E000A00BC4 /* InfoPlist.strings */; };
+		0346ACCD166EB0E000A00BC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0346ACCC166EB0E000A00BC4 /* main.m */; };
+		0346ACD3166EB0E000A00BC4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0346ACD2166EB0E000A00BC4 /* Default.png */; };
+		0346ACD5166EB0E000A00BC4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0346ACD4166EB0E000A00BC4 /* Default@2x.png */; };
+		0346ACD7166EB0E000A00BC4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0346ACD6166EB0E000A00BC4 /* Default-568h@2x.png */; };
+		0348A7E31679497B00BDC6A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0348A7E21679497B00BDC6A3 /* QuartzCore.framework */; };
+		0348A7F916794AA700BDC6A3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0348A7F816794AA700BDC6A3 /* libz.dylib */; };
+		7CA440776EC534B3540FB8EC /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA449AB0EEA64E50D9B7E84 /* UIColor+Utils.m */; };
+		7CA4415ADF7573D4378B298C /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA44A597255E591874F395D /* libTestFlight.a */; };
+		7CA441C0B1F2D5D58247CE64 /* ALCalendarDayEventsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4488EF1B5C699F1EC00D0 /* ALCalendarDayEventsView.m */; };
+		7CA4423937F5C64A24B4A147 /* ALCalendarTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44574F3E7C37DD3CC6031 /* ALCalendarTileView.m */; };
+		7CA443B6786C934BFCF39095 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA447526C0870E6D31B7955 /* BasicViewController.m */; };
+		7CA4440A343B1402518E4DC4 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44C54A3156CA9E9116E42 /* BasicView.m */; };
+		7CA444EFC09F4ACD21C2075D /* BasicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA440002B6DADB5E265A341 /* BasicLibrary.m */; };
+		7CA4450AD32A42FF612A38A1 /* PlaqueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA446EC1A29EF25EB3320A2 /* PlaqueView.m */; };
+		7CA44648174B26986DD7DAEC /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4479777760D3029ABA651 /* CustomLabel.m */; };
+		7CA446617542C572C67264A0 /* TableRowObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44AFDF317F3DDC298D272 /* TableRowObject.m */; };
+		7CA44699465FDE4404C8238E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA44DAE6A35A15973A742E9 /* MainStoryboard.storyboard */; };
+		7CA447A5308915D7E620B4A0 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44D9F87CCD8B9679F1F2F /* UIView+Utils.m */; };
+		7CA4482FDE62A01D41B9E656 /* VeryBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44D8F8408EA95DDA9C41C /* VeryBasicViewController.m */; };
+		7CA4488D9051B9EA512539D6 /* MainStoryboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA44F562EC6427AC3BC4BBF /* MainStoryboard-iPad.storyboard */; };
+		7CA4495DA5391E008CE45059 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4423852B75F8B9DB166AB /* Model.m */; };
+		7CA4498DBF602AEB5F5DB2B0 /* ALCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4422582940DD777A6FFA0 /* ALCalendarDayView.m */; };
+		7CA449A2BD72FBBBC073F151 /* TableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44BA33B63A9E57E509D2C /* TableSection.m */; };
+		7CA44A7F3928EA18A3456825 /* ALCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4485240039A0575525251 /* ALCalendarEvent.m */; };
+		7CA44B1B3467798FF75BC435 /* CBLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4493BD6ACF6FEA66A39F9 /* CBLayer.m */; };
+		7CA44B6194499892F1D900EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA443D8379D101643027A11 /* AppDelegate.m */; };
+		7CA44CE5F2A4291B0BE9EC50 /* Plaque2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA446DEABC55BDE301858C0 /* Plaque2.xib */; };
+		7CA44E1961E49C8E043CA613 /* BasicOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44F4C3BAB96C5940B8B7A /* BasicOperation.m */; };
+		7CA44EC9BC64D0C8421EEFBF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44BAF34FA3C56DF582E2D /* MainViewController.m */; };
+		7CA44EE395A2AA60A31497A0 /* BasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44C33806448F4A0C2A111 /* BasicModel.m */; };
+		7CA44EE5F5A7671D38D4822F /* ALCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA440645F118E876A7CACF4 /* ALCalendar.m */; };
+		7CA44F04A52A9F9BA3F8C341 /* DeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA447E05D2A96881A230072 /* DeviceUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03150125166EB4960025F1F7 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		03150126166EB4960025F1F7 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		03150127166EB4960025F1F7 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		033C39E9167C139A004EC2F1 /* Plaque1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Plaque1.xib; path = src/xibs/Plaque1.xib; sourceTree = "<group>"; };
+		0346ACBC166EB0E000A00BC4 /* ECRooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECRooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0346ACC0166EB0E000A00BC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0346ACC2166EB0E000A00BC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0346ACC4166EB0E000A00BC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0346ACC8166EB0E000A00BC4 /* ECRooms-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ECRooms-Info.plist"; sourceTree = "<group>"; };
+		0346ACCA166EB0E000A00BC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0346ACCC166EB0E000A00BC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0346ACCE166EB0E000A00BC4 /* ECRooms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECRooms-Prefix.pch"; sourceTree = "<group>"; };
+		0346ACD2166EB0E000A00BC4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0346ACD4166EB0E000A00BC4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0346ACD6166EB0E000A00BC4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0348A7E21679497B00BDC6A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0348A7F816794AA700BDC6A3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7CA440002B6DADB5E265A341 /* BasicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicLibrary.m; path = src/models/BasicLibrary.m; sourceTree = "<group>"; };
+		7CA440645F118E876A7CACF4 /* ALCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendar.m; path = src/toolkit/ALCalendarDayView/ALCalendar.m; sourceTree = "<group>"; };
+		7CA441206EA585A90DDB064A /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomLabel.h; path = src/eccalendar/controls/CustomLabel.h; sourceTree = "<group>"; };
+		7CA44141612378CC15BDA0E2 /* BasicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicLibrary.h; path = src/models/BasicLibrary.h; sourceTree = "<group>"; };
+		7CA4422582940DD777A6FFA0 /* ALCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendarDayView.m; path = src/toolkit/ALCalendarDayView/ALCalendarDayView.m; sourceTree = "<group>"; };
+		7CA4423852B75F8B9DB166AB /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = src/eccalendar/models/Model.m; sourceTree = "<group>"; };
+		7CA4425CAF6E7163D701431B /* ALCalendarDayEventsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarDayEventsView.h; path = src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.h; sourceTree = "<group>"; };
+		7CA4427AF5ED6B5EA766F969 /* ALCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarEvent.h; path = src/toolkit/ALCalendarDayView/ALCalendarEvent.h; sourceTree = "<group>"; };
+		7CA442855C5395A5923EE458 /* BasicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicModel.h; path = src/models/BasicModel.h; sourceTree = "<group>"; };
+		7CA442CD1F26628748308CA4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = src/eccalendar/viewcontrollers/MainViewController.h; sourceTree = "<group>"; };
+		7CA442D28806375D0ADAFD62 /* ALCalendarTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarTileView.h; path = src/toolkit/ALCalendarDayView/ALCalendarTileView.h; sourceTree = "<group>"; };
+		7CA443AC3E50A6F9E00C0AA9 /* BasicOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicOperation.h; path = src/operations/BasicOperation.h; sourceTree = "<group>"; };
+		7CA443D8379D101643027A11 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = src/eccalendar/app/AppDelegate.m; sourceTree = "<group>"; };
+		7CA44484B988A212F810F07F /* VeryBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VeryBasicViewController.h; path = src/viewcontrollers/VeryBasicViewController.h; sourceTree = "<group>"; };
+		7CA444E18B9F6B5594FC21AA /* ALCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarDayView.h; path = src/toolkit/ALCalendarDayView/ALCalendarDayView.h; sourceTree = "<group>"; };
+		7CA444FF41836A7D7A81A87D /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Utils.h"; path = "src/utils/UIView+Utils.h"; sourceTree = "<group>"; };
+		7CA44574F3E7C37DD3CC6031 /* ALCalendarTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendarTileView.m; path = src/toolkit/ALCalendarDayView/ALCalendarTileView.m; sourceTree = "<group>"; };
+		7CA445FA6B9AC7A570AC7D2F /* CBLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBLayer.h; path = src/toolkit/CBButtons/CBLayer.h; sourceTree = "<group>"; };
+		7CA446926218C11435558B6D /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Utils.h"; path = "src/utils/UIColor+Utils.h"; sourceTree = "<group>"; };
+		7CA446A4C1BE2393441B06A3 /* TableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableSection.h; path = src/table/TableSection.h; sourceTree = "<group>"; };
+		7CA446DEABC55BDE301858C0 /* Plaque2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Plaque2.xib; path = src/xibs/Plaque2.xib; sourceTree = "<group>"; };
+		7CA446EC1A29EF25EB3320A2 /* PlaqueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaqueView.m; path = src/eccalendar/views/PlaqueView.m; sourceTree = "<group>"; };
+		7CA447526C0870E6D31B7955 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicViewController.m; path = src/eccalendar/viewcontrollers/BasicViewController.m; sourceTree = "<group>"; };
+		7CA447557B77CA37DFF56A01 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = src/toolkit/TestFlight/TestFlight.h; sourceTree = "<group>"; };
+		7CA44779CB9702A5E2A4E001 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = src/eccalendar/models/Model.h; sourceTree = "<group>"; };
+		7CA4479777760D3029ABA651 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomLabel.m; path = src/eccalendar/controls/CustomLabel.m; sourceTree = "<group>"; };
+		7CA447CB57671B0FF9136559 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConstants.h; path = src/eccalendar/models/AppConstants.h; sourceTree = "<group>"; };
+		7CA447E05D2A96881A230072 /* DeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceUtils.m; path = src/utils/DeviceUtils.m; sourceTree = "<group>"; };
+		7CA4485240039A0575525251 /* ALCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendarEvent.m; path = src/toolkit/ALCalendarDayView/ALCalendarEvent.m; sourceTree = "<group>"; };
+		7CA4487B2A8BD56B69F6429D /* ALCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendar.h; path = src/toolkit/ALCalendarDayView/ALCalendar.h; sourceTree = "<group>"; };
+		7CA4488EF1B5C699F1EC00D0 /* ALCalendarDayEventsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendarDayEventsView.m; path = src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m; sourceTree = "<group>"; };
+		7CA448E12B3E5762EA620FDF /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceUtils.h; path = src/utils/DeviceUtils.h; sourceTree = "<group>"; };
+		7CA448F57AF5BB94CD439BA3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = src/eccalendar/app/AppDelegate.h; sourceTree = "<group>"; };
+		7CA4493BD6ACF6FEA66A39F9 /* CBLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBLayer.m; path = src/toolkit/CBButtons/CBLayer.m; sourceTree = "<group>"; };
+		7CA4498E891D8152CEB4EEE8 /* PlaqueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaqueView.h; path = src/eccalendar/views/PlaqueView.h; sourceTree = "<group>"; };
+		7CA449AB0EEA64E50D9B7E84 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Utils.m"; path = "src/utils/UIColor+Utils.m"; sourceTree = "<group>"; };
+		7CA44A597255E591874F395D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = src/toolkit/TestFlight/libTestFlight.a; sourceTree = "<group>"; };
+		7CA44AFDF317F3DDC298D272 /* TableRowObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableRowObject.m; path = src/table/TableRowObject.m; sourceTree = "<group>"; };
+		7CA44BA33B63A9E57E509D2C /* TableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableSection.m; path = src/table/TableSection.m; sourceTree = "<group>"; };
+		7CA44BAF34FA3C56DF582E2D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = src/eccalendar/viewcontrollers/MainViewController.m; sourceTree = "<group>"; };
+		7CA44BDA30F1BBE3F1C5A218 /* BasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicView.h; path = src/views/BasicView.h; sourceTree = "<group>"; };
+		7CA44C33806448F4A0C2A111 /* BasicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicModel.m; path = src/models/BasicModel.m; sourceTree = "<group>"; };
+		7CA44C54A3156CA9E9116E42 /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicView.m; path = src/views/BasicView.m; sourceTree = "<group>"; };
+		7CA44CCA2D356F49F2D8DF50 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicViewController.h; path = src/eccalendar/viewcontrollers/BasicViewController.h; sourceTree = "<group>"; };
+		7CA44D8F8408EA95DDA9C41C /* VeryBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VeryBasicViewController.m; path = src/viewcontrollers/VeryBasicViewController.m; sourceTree = "<group>"; };
+		7CA44D9F87CCD8B9679F1F2F /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Utils.m"; path = "src/utils/UIView+Utils.m"; sourceTree = "<group>"; };
+		7CA44DAE6A35A15973A742E9 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = src/eccalendar/nibs/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7CA44F108609679CF5D210EE /* TableRowObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableRowObject.h; path = src/table/TableRowObject.h; sourceTree = "<group>"; };
+		7CA44F4C3BAB96C5940B8B7A /* BasicOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicOperation.m; path = src/operations/BasicOperation.m; sourceTree = "<group>"; };
+		7CA44F562EC6427AC3BC4BBF /* MainStoryboard-iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard-iPad.storyboard"; path = "src/eccalendar/nibs/MainStoryboard-iPad.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0346ACB9166EB0E000A00BC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0348A7F916794AA700BDC6A3 /* libz.dylib in Frameworks */,
+				0348A7E31679497B00BDC6A3 /* QuartzCore.framework in Frameworks */,
+				0346ACC1166EB0E000A00BC4 /* UIKit.framework in Frameworks */,
+				0346ACC3166EB0E000A00BC4 /* Foundation.framework in Frameworks */,
+				0346ACC5166EB0E000A00BC4 /* CoreGraphics.framework in Frameworks */,
+				7CA4415ADF7573D4378B298C /* libTestFlight.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0346ACB1166EB0DF00A00BC4 = {
+			isa = PBXGroup;
+			children = (
+				033C39E9167C139A004EC2F1 /* Plaque1.xib */,
+				0346ACC6166EB0E000A00BC4 /* BasicProject */,
+				03150127166EB4960025F1F7 /* src */,
+				03150125166EB4960025F1F7 /* assets */,
+				03150126166EB4960025F1F7 /* scripts */,
+				0346ACBF166EB0E000A00BC4 /* Frameworks */,
+				0346ACBD166EB0E000A00BC4 /* Products */,
+				7CA44484B988A212F810F07F /* VeryBasicViewController.h */,
+				7CA44D8F8408EA95DDA9C41C /* VeryBasicViewController.m */,
+				7CA44C33806448F4A0C2A111 /* BasicModel.m */,
+				7CA442855C5395A5923EE458 /* BasicModel.h */,
+				7CA440002B6DADB5E265A341 /* BasicLibrary.m */,
+				7CA44141612378CC15BDA0E2 /* BasicLibrary.h */,
+				7CA44F4C3BAB96C5940B8B7A /* BasicOperation.m */,
+				7CA443AC3E50A6F9E00C0AA9 /* BasicOperation.h */,
+				7CA444FF41836A7D7A81A87D /* UIView+Utils.h */,
+				7CA44D9F87CCD8B9679F1F2F /* UIView+Utils.m */,
+				7CA446926218C11435558B6D /* UIColor+Utils.h */,
+				7CA449AB0EEA64E50D9B7E84 /* UIColor+Utils.m */,
+				7CA44C54A3156CA9E9116E42 /* BasicView.m */,
+				7CA44BDA30F1BBE3F1C5A218 /* BasicView.h */,
+				7CA44F108609679CF5D210EE /* TableRowObject.h */,
+				7CA44AFDF317F3DDC298D272 /* TableRowObject.m */,
+				7CA446A4C1BE2393441B06A3 /* TableSection.h */,
+				7CA44BA33B63A9E57E509D2C /* TableSection.m */,
+				7CA4493BD6ACF6FEA66A39F9 /* CBLayer.m */,
+				7CA445FA6B9AC7A570AC7D2F /* CBLayer.h */,
+				7CA447557B77CA37DFF56A01 /* TestFlight.h */,
+				7CA44F562EC6427AC3BC4BBF /* MainStoryboard-iPad.storyboard */,
+				7CA44DAE6A35A15973A742E9 /* MainStoryboard.storyboard */,
+				7CA447CB57671B0FF9136559 /* AppConstants.h */,
+				7CA44779CB9702A5E2A4E001 /* Model.h */,
+				7CA4423852B75F8B9DB166AB /* Model.m */,
+				7CA448F57AF5BB94CD439BA3 /* AppDelegate.h */,
+				7CA443D8379D101643027A11 /* AppDelegate.m */,
+				7CA44CCA2D356F49F2D8DF50 /* BasicViewController.h */,
+				7CA447526C0870E6D31B7955 /* BasicViewController.m */,
+				7CA4479777760D3029ABA651 /* CustomLabel.m */,
+				7CA441206EA585A90DDB064A /* CustomLabel.h */,
+				7CA447E05D2A96881A230072 /* DeviceUtils.m */,
+				7CA448E12B3E5762EA620FDF /* DeviceUtils.h */,
+				7CA444E18B9F6B5594FC21AA /* ALCalendarDayView.h */,
+				7CA4422582940DD777A6FFA0 /* ALCalendarDayView.m */,
+				7CA4425CAF6E7163D701431B /* ALCalendarDayEventsView.h */,
+				7CA4488EF1B5C699F1EC00D0 /* ALCalendarDayEventsView.m */,
+				7CA4427AF5ED6B5EA766F969 /* ALCalendarEvent.h */,
+				7CA4485240039A0575525251 /* ALCalendarEvent.m */,
+				7CA442D28806375D0ADAFD62 /* ALCalendarTileView.h */,
+				7CA44574F3E7C37DD3CC6031 /* ALCalendarTileView.m */,
+				7CA44BAF34FA3C56DF582E2D /* MainViewController.m */,
+				7CA442CD1F26628748308CA4 /* MainViewController.h */,
+				7CA440645F118E876A7CACF4 /* ALCalendar.m */,
+				7CA4487B2A8BD56B69F6429D /* ALCalendar.h */,
+				7CA446EC1A29EF25EB3320A2 /* PlaqueView.m */,
+				7CA4498E891D8152CEB4EEE8 /* PlaqueView.h */,
+				7CA446DEABC55BDE301858C0 /* Plaque2.xib */,
+			);
+			sourceTree = "<group>";
+		};
+		0346ACBD166EB0E000A00BC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0346ACBC166EB0E000A00BC4 /* ECRooms.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0346ACBF166EB0E000A00BC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0348A7F816794AA700BDC6A3 /* libz.dylib */,
+				7CA44A597255E591874F395D /* libTestFlight.a */,
+				0348A7E21679497B00BDC6A3 /* QuartzCore.framework */,
+				0346ACC0166EB0E000A00BC4 /* UIKit.framework */,
+				0346ACC2166EB0E000A00BC4 /* Foundation.framework */,
+				0346ACC4166EB0E000A00BC4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0346ACC6166EB0E000A00BC4 /* BasicProject */ = {
+			isa = PBXGroup;
+			children = (
+				0346ACC7166EB0E000A00BC4 /* Supporting Files */,
+			);
+			path = BasicProject;
+			sourceTree = "<group>";
+		};
+		0346ACC7166EB0E000A00BC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0346ACC8166EB0E000A00BC4 /* ECRooms-Info.plist */,
+				0346ACC9166EB0E000A00BC4 /* InfoPlist.strings */,
+				0346ACCC166EB0E000A00BC4 /* main.m */,
+				0346ACCE166EB0E000A00BC4 /* ECRooms-Prefix.pch */,
+				0346ACD2166EB0E000A00BC4 /* Default.png */,
+				0346ACD4166EB0E000A00BC4 /* Default@2x.png */,
+				0346ACD6166EB0E000A00BC4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0346ACBB166EB0E000A00BC4 /* ECRooms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0346ACDA166EB0E000A00BC4 /* Build configuration list for PBXNativeTarget "ECRooms" */;
+			buildPhases = (
+				0346ACB8166EB0E000A00BC4 /* Sources */,
+				0346ACB9166EB0E000A00BC4 /* Frameworks */,
+				0346ACBA166EB0E000A00BC4 /* Resources */,
+				0346ACE9166EB1F700A00BC4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECRooms;
+			productName = BasicProject;
+			productReference = 0346ACBC166EB0E000A00BC4 /* ECRooms.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0346ACB3166EB0DF00A00BC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Daniela Postigo";
+			};
+			buildConfigurationList = 0346ACB6166EB0DF00A00BC4 /* Build configuration list for PBXProject "ECRooms" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0346ACB1166EB0DF00A00BC4;
+			productRefGroup = 0346ACBD166EB0E000A00BC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0346ACBB166EB0E000A00BC4 /* ECRooms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0346ACBA166EB0E000A00BC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0346ACCB166EB0E000A00BC4 /* InfoPlist.strings in Resources */,
+				0346ACD3166EB0E000A00BC4 /* Default.png in Resources */,
+				0346ACD5166EB0E000A00BC4 /* Default@2x.png in Resources */,
+				0346ACD7166EB0E000A00BC4 /* Default-568h@2x.png in Resources */,
+				03150128166EB4960025F1F7 /* assets in Resources */,
+				03150129166EB4960025F1F7 /* scripts in Resources */,
+				0315012A166EB4960025F1F7 /* src in Resources */,
+				7CA4488D9051B9EA512539D6 /* MainStoryboard-iPad.storyboard in Resources */,
+				7CA44699465FDE4404C8238E /* MainStoryboard.storyboard in Resources */,
+				033C39EA167C139A004EC2F1 /* Plaque1.xib in Resources */,
+				7CA44CE5F2A4291B0BE9EC50 /* Plaque2.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0346ACE9166EB1F700A00BC4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Echo ${SRCROOT}\"\n/bin/sh \"${SRCROOT}/scripts/import_script.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0346ACB8166EB0E000A00BC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0346ACCD166EB0E000A00BC4 /* main.m in Sources */,
+				7CA4482FDE62A01D41B9E656 /* VeryBasicViewController.m in Sources */,
+				7CA44EE395A2AA60A31497A0 /* BasicModel.m in Sources */,
+				7CA444EFC09F4ACD21C2075D /* BasicLibrary.m in Sources */,
+				7CA44E1961E49C8E043CA613 /* BasicOperation.m in Sources */,
+				7CA447A5308915D7E620B4A0 /* UIView+Utils.m in Sources */,
+				7CA440776EC534B3540FB8EC /* UIColor+Utils.m in Sources */,
+				7CA4440A343B1402518E4DC4 /* BasicView.m in Sources */,
+				7CA446617542C572C67264A0 /* TableRowObject.m in Sources */,
+				7CA449A2BD72FBBBC073F151 /* TableSection.m in Sources */,
+				7CA44B1B3467798FF75BC435 /* CBLayer.m in Sources */,
+				7CA4495DA5391E008CE45059 /* Model.m in Sources */,
+				7CA44B6194499892F1D900EE /* AppDelegate.m in Sources */,
+				7CA443B6786C934BFCF39095 /* BasicViewController.m in Sources */,
+				7CA44648174B26986DD7DAEC /* CustomLabel.m in Sources */,
+				7CA44F04A52A9F9BA3F8C341 /* DeviceUtils.m in Sources */,
+				7CA4498DBF602AEB5F5DB2B0 /* ALCalendarDayView.m in Sources */,
+				7CA441C0B1F2D5D58247CE64 /* ALCalendarDayEventsView.m in Sources */,
+				7CA44A7F3928EA18A3456825 /* ALCalendarEvent.m in Sources */,
+				7CA4423937F5C64A24B4A147 /* ALCalendarTileView.m in Sources */,
+				7CA44EC9BC64D0C8421EEFBF /* MainViewController.m in Sources */,
+				7CA44EE5F5A7671D38D4822F /* ALCalendar.m in Sources */,
+				7CA4450AD32A42FF612A38A1 /* PlaqueView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0346ACC9166EB0E000A00BC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0346ACCA166EB0E000A00BC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0346ACD8166EB0E000A00BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0346ACD9166EB0E000A00BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0346ACDB166EB0E000A00BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicProject/ECRooms-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TESTFLIGHT_ENABLED=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BasicProject/ECRooms-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
+					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
+				);
+				PRODUCT_NAME = ECRooms;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0346ACDC166EB0E000A00BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicProject/ECRooms-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT_ENABLED=1";
+				INFOPLIST_FILE = "BasicProject/ECRooms-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
+					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
+				);
+				PRODUCT_NAME = ECRooms;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0348A7E5167949F600BDC6A3 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		0348A7E6167949F600BDC6A3 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicProject/ECRooms-Prefix.pch";
+				INFOPLIST_FILE = "BasicProject/ECRooms-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
+					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
+				);
+				PRODUCT_NAME = ECRooms;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AppStore;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0346ACB6166EB0DF00A00BC4 /* Build configuration list for PBXProject "ECRooms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0346ACD8166EB0E000A00BC4 /* Debug */,
+				0346ACD9166EB0E000A00BC4 /* Release */,
+				0348A7E5167949F600BDC6A3 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0346ACDA166EB0E000A00BC4 /* Build configuration list for PBXNativeTarget "ECRooms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0346ACDB166EB0E000A00BC4 /* Debug */,
+				0346ACDC166EB0E000A00BC4 /* Release */,
+				0348A7E6167949F600BDC6A3 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0346ACB3166EB0DF00A00BC4 /* Project object */;
+}
