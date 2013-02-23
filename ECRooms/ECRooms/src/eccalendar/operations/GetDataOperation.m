@@ -26,7 +26,6 @@
 
         NSArray *calendars = [store calendarsForEntityType: EKEntityTypeEvent];
         for (EKCalendar *calendar in calendars) {
-
             if ([calendar.title isEqualToString: @"*Meeting 550 Conference"] ||
                     [calendar.title isEqualToString: @"*Meeting Cloud (Loft)"] ||
                     [calendar.title isEqualToString: @"*Meeting Field (Interactive)"]) {
@@ -35,6 +34,9 @@
             }
         }
 
+        if ([_model.calendars count] == 0) {
+            [_model notifyDelegates: @selector(calendarsNotFound) object: nil];
+        }
         NSCalendar *calendar = [NSCalendar currentCalendar];
 
 
@@ -61,7 +63,6 @@
         }
 
         _model.calendarEvents = array;
-
         [_model notifyDelegates: @selector(didUpdateCalendarEvents) object: nil];
     }];
 }
