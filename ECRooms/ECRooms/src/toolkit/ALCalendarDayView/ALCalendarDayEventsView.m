@@ -159,6 +159,8 @@ static NSArray *hoursStrings;
     const CGFloat dashPattern[2] = {1.0, 1.0};
     [[UIColor lightGrayColor] setStroke];
     CGContextSetLineDash(g, 0, dashPattern, 2);
+
+
     for (NSInteger i = 0; i < 24; i++) {
         CGFloat time = (CGFloat) i + 0.5f;
         CGFloat yVal = self.topMargin + [self yValueForTime: time];
@@ -170,15 +172,18 @@ static NSArray *hoursStrings;
     // draw hour numbers
     CGContextSetShouldAntialias(g, YES);
     [self.timeLabelsColor set];
+
     UIFont *numberFont = self.timeLabelsFont;
-    NSArray *arrHours = self.amPmFormat ? timeStrings: hoursStrings;
-
+    NSArray *arrHours = self.amPmFormat ? timeStrings : hoursStrings;
+    arrHours = timeStrings;
     CGFloat numberWidth = self.amPmFormat ? self.leftMargin - 30: self.leftMargin - 10;
-
 
     for (NSUInteger i = 0; i < 25; i++) {
         CGFloat yVal = self.topMargin + [self yValueForTime: (CGFloat) i];
         NSString *number = [arrHours objectAtIndex: i];
+
+        number = [number stringByAppendingString: (i < 12 ? @" AM": @" PM")];
+
         CGSize numberSize = [number sizeWithFont: numberFont];
         CGRect textRect = CGRectMake(0, yVal - floor(numberSize.height / 2) - 1, numberWidth, numberSize.height);
         [number drawInRect: textRect withFont: numberFont lineBreakMode: NSLineBreakByTruncatingTail alignment: NSTextAlignmentRight];
@@ -216,7 +221,7 @@ static NSArray *hoursStrings;
         NSArray *column = [columns objectAtIndex: i];
         for (NSUInteger j = 0; j < [column count]; j++) {
             ALCalendarTileView *tile = [column objectAtIndex: j];
-            tile.frame = CGRectMake( (self.leftMargin + i * 1.0 / n * width) + self.gutterWidth, tile.frame.origin.y, width / n, tile.frame.size.height);
+            tile.frame = CGRectMake((self.leftMargin + i * 1.0 / n * width) + self.gutterWidth, tile.frame.origin.y, (width / n) - self.gutterWidth, tile.frame.size.height);
         }
     }
 }

@@ -17,8 +17,6 @@
     if (self) {
 
         [self addSubview: front];
-        NSLog(@"front = %@", front);
-        NSLog(@"%s", __PRETTY_FUNCTION__);
     }
 
     return self;
@@ -27,7 +25,6 @@
 
 - (void) awakeFromNib {
     [super awakeFromNib];
-    NSLog(@"front = %@", front);
     [self addSubview: front];
 }
 
@@ -36,7 +33,7 @@
 
     NSLog(@"%s", __PRETTY_FUNCTION__);
 
-    UIViewAnimationOptions options = [front superview] ? UIViewAnimationOptionTransitionFlipFromBottom : UIViewAnimationOptionTransitionFlipFromTop;
+    UIViewAnimationOptions options = [front superview] ? UIViewAnimationOptionTransitionFlipFromLeft: UIViewAnimationOptionTransitionFlipFromLeft;
 
     [UIView transitionWithView: self
                       duration: 0.5
@@ -46,7 +43,6 @@
                         if ([front superview]) {
                             [front removeFromSuperview];
                             [self addSubview: back];
-
                         }
 
                         else {
@@ -54,7 +50,6 @@
                             [back removeFromSuperview];
                             [self addSubview: front];
                         }
-
                     }
                     completion: NULL];
 }

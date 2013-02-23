@@ -11,8 +11,8 @@
     if (self) {
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         self.titleLabel.backgroundColor = [UIColor clearColor];
-        self.titleLabel.textColor = [UIColor whiteColor];
-        self.titleLabel.shadowColor = [UIColor colorWithWhite:0.0f alpha:0.5f];
+//        self.titleLabel.textColor = [UIColor whiteColor];
+////        self.titleLabel.shadowColor = [UIColor colorWithWhite:0.0f alpha:0.5f];
         self.titleLabel.font = [UIFont boldSystemFontOfSize:14.0f];
         [self addSubview:self.titleLabel];
 

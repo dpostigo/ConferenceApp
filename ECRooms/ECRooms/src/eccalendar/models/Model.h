@@ -6,20 +6,28 @@
 
 
 #import <Foundation/Foundation.h>
+#import <EventKit/EventKit.h>
 #import "BasicModel.h"
+#import "RoomType.h"
 
-@interface Model : BasicModel  {
-    NSMutableArray *drawings;
-    BOOL usesGestures;
 
-    BOOL directorLive;
+@interface Model : BasicModel {
 
+    NSArray *calendarEvents;
+    NSMutableArray *calendars;
+    RoomType currentRoomType;
+
+    EKEventStore *eventStore;
 }
 
-@property(nonatomic, strong) NSMutableArray *drawings;
-@property(nonatomic) BOOL usesGestures;
-@property(nonatomic) BOOL directorLive;
-+ (Model *) sharedModel;
 
+@property(nonatomic, strong) NSArray *calendarEvents;
+@property(nonatomic) RoomType currentRoomType;
+@property(nonatomic, strong) NSMutableArray *calendars;
+@property(nonatomic, strong) EKEventStore *eventStore;
++ (Model *) sharedModel;
+- (NSString *) currentRoomStringIdentifier;
+- (NSString *) slugForRoomType: (RoomType) aType;
+- (NSArray *) currentCalendarEvents;
 
 @end

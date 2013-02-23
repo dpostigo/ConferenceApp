@@ -1,0 +1,124 @@
+//
+// Created by dpostigo on 2/22/13.
+//
+// To change the template use AppCode | Preferences | File Templates.
+//
+
+
+#import <QuartzCore/QuartzCore.h>
+#import "RoomPlaque.h"
+#import "Model.h"
+#import "BasicTableCell.h"
+#import "UILabel+ECCalendar.h"
+#import "BasicWhiteView.h"
+
+
+@implementation RoomPlaque {
+    NSMutableArray *rooms;
+}
+
+
+@synthesize rooms;
+@synthesize picker;
+@synthesize titleLabel;
+@synthesize table;
+
+
+- (id) initWithCoder: (NSCoder *) aDecoder {
+    self = [super initWithCoder: aDecoder];
+    if (self) {
+
+        rooms = [[NSMutableArray alloc] init];
+
+        [rooms addObject: @"Meeting Cloud 1"];
+        [rooms addObject: @"Meeting Field (Interactive)"];
+        [rooms addObject: @"Meeting 550 Conference"];
+
+        picker.height = 600;
+
+        NSLog(@"titleLabel = %@", titleLabel);
+
+        [table registerClass: [UITableViewCell class] forCellReuseIdentifier: @"RoomCell"];
+    }
+
+    return self;
+}
+
+
+- (void) awakeFromNib {
+    [super awakeFromNib];
+}
+
+
+
+#pragma mark UIPickerViewDelegate
+
+
+
+
+
+
+- (void) pickerView: (UIPickerView *) pickerView didSelectRow: (NSInteger) row inComponent: (NSInteger) component {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+
+    [Model sharedModel].currentRoomType = (RoomType *) row;
+}
+
+
+- (NSString *) pickerView: (UIPickerView *) pickerView titleForRow: (NSInteger) row forComponent: (NSInteger) component {
+    return [rooms objectAtIndex: row];
+}
+
+
+- (NSInteger) numberOfComponentsInPickerView: (UIPickerView *) pickerView {
+    return 1;
+}
+
+
+- (NSInteger) pickerView: (UIPickerView *) pickerView numberOfRowsInComponent: (NSInteger) component {
+    return [rooms count];
+}
+
+
+#pragma mark UITableView Delegate
+
+
+#pragma mark UITableView Datasource
+
+- (NSInteger) tableView: (UITableView *) tableView numberOfRowsInSection: (NSInteger) section {
+    return [rooms count];
+}
+
+
+- (UITableViewCell *) tableView: (UITableView *) tableView cellForRowAtIndexPath: (NSIndexPath *) indexPath {
+    NSString *string = [rooms objectAtIndex: indexPath.row];
+    UITableViewCell *cell = nil;
+    cell = [tableView dequeueReusableCellWithIdentifier: @"RoomCell"];
+
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: @"RoomCell"];
+    }
+
+    cell.textLabel.text = string;
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    [cell.textLabel format];
+    cell.textLabel.font = [UIFont fontWithName: @"Antartida-Black" size: 13.0];
+
+    cell.selectedBackgroundView = [[BasicWhiteView alloc] init];
+    cell.selectedBackgroundView.layer.cornerRadius = 2.0;
+    cell.selectedBackgroundView.backgroundColor = [UIColor blackColor];
+    cell.selectedBackgroundView.layer.masksToBounds = YES;
+    cell.selectedBackgroundView.clipsToBounds = YES;
+
+    return cell;
+}
+
+
+- (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
+
+    [Model sharedModel].currentRoomType = (RoomType) indexPath.row;
+    [[Model sharedModel] notifyDelegates: @selector(didChangeRoomType) object: nil];
+}
+
+@end

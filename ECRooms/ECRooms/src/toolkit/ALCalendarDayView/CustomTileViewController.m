@@ -1,8 +1,10 @@
 #import <QuartzCore/QuartzCore.h>
+#import <EventKit/EventKit.h>
 #import "CustomTileViewController.h"
 #import "ALCalendarEvent.h"
 #import "ALCalendarDayView.h"
 #import "ALCalendarTileView.h"
+#import "Model.h"
 
 
 @interface CustomTileView : ALCalendarTileView
@@ -21,13 +23,18 @@
     if (self) {
 
         self.leftView = [[UIView alloc] initWithFrame: CGRectZero];
-        [self addSubview: self.leftView];
+        //  [self addSubview: self.leftView];
 
-        self.titleLabel.textColor = [UIColor darkGrayColor];
-        self.backgroundColor = [[UIColor redColor] colorWithAlphaComponent: 0.2];
+        //        self.titleLabel.font = [UIFont fontWithName: @"Antartida-Black" size: 12.0];
+        self.titleLabel.font = [UIFont fontWithName: @"Antartida-Bold" size: 12.0];
+        self.titleLabel.textColor = [UIColor colorWithRed: 1.0 green: 0 blue: 0 alpha: 0.5];
+        self.titleLabel.textColor = [UIColor whiteColor];
+
+        self.titleLabel.layer.shadowOpacity = 1.0;
+        self.titleLabel.layer.shadowOffset = CGSizeMake(0, 1);
+        self.titleLabel.layer.shadowRadius = 1.0;
 
         self.layer.cornerRadius = 5.0;
-        self.layer.borderColor = self.backgroundColor.CGColor;
         self.layer.borderWidth = 1.0;
     }
     return self;
@@ -35,11 +42,28 @@
 
 
 - (void) layoutSubviews {
+
+    self.backgroundColor = [self.leftViewBackgroundColor colorWithAlphaComponent: 0.3];
+    self.layer.borderColor = self.leftViewBackgroundColor.CGColor;
+
     self.leftView.frame = CGRectMake(0, 0, 10, self.frame.size.height);
     self.leftView.backgroundColor = self.leftViewBackgroundColor;
 
-    self.titleLabel.frame = CGRectMake(20, 0, self.frame.size.width - 30, 15);
-    self.titleLabel.shadowOffset = CGSizeZero;
+    self.titleLabel.frame = CGRectMake(10, 5, self.frame.size.width - 30, 15);
+    self.titleLabel.layer.shadowColor = [self.leftViewBackgroundColor colorWithAlphaComponent: 0.5].CGColor;
+    //    self.titleLabel.shadowOffset = CGSizeZero;
+
+
+
+    if (self.leftViewBackgroundColor == [UIColor lightGrayColor]) {
+        self.titleLabel.textColor = [UIColor grayColor];
+        self.titleLabel.layer.shadowOpacity = 0;
+        self.titleLabel.layer.shadowRadius = 0;
+        self.titleLabel.layer.borderWidth = 0;
+        self.titleLabel.font = [UIFont fontWithName: @"Antartida-Black" size: 12.0];
+        self.titleLabel.shadowColor = [UIColor clearColor];
+    } else {
+    }
 }
 
 @end
@@ -67,6 +91,7 @@
         calendarDayView.eventsView.amPmFormat = YES;
         calendarDayView.eventsView.dataSource = self;
         calendarDayView.eventsView.delegate = self;
+
         [self.view addSubview: calendarDayView];
     }
 
@@ -80,33 +105,30 @@
 
 
 - (NSArray *) calendarEventsForDate: (NSDate *) date {
+
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat: @"yyyy-MM-dd HH:mm"];
-    NSMutableArray *result = [[NSMutableArray alloc] init];
-    ALCalendarEvent *sleepEvent = [[ALCalendarEvent alloc] init];
-    sleepEvent.start = [dateFormatter dateFromString: @"2012-08-08 03:00"];
-    sleepEvent.end = [dateFormatter dateFromString: @"2012-08-08 08:00"];
-    sleepEvent.color = [UIColor colorWithRed: 1 green: 0 blue: 0 alpha: 0.5];
-    sleepEvent.title = @"Sleep";
-    [result addObject: sleepEvent];
 
-    ALCalendarEvent *workEvent = [[ALCalendarEvent alloc] init];
-    workEvent.start = [dateFormatter dateFromString: @"2012-08-08 09:00"];
-    workEvent.end = [dateFormatter dateFromString: @"2012-08-08 19:00"];
-    workEvent.color = [UIColor colorWithRed: 0.1 green: 0.2 blue: 0.9 alpha: 0.6];
-    workEvent.title = @"Work";
-    workEvent.description = @"Developing day calendar view component. Discussing aTimeLogger UI with designer";
-    [result addObject: workEvent];
+    NSMutableArray *newEvents = [[NSMutableArray alloc] init];
 
-    ALCalendarEvent *dinnerEvent = [[ALCalendarEvent alloc] init];
-    dinnerEvent.start = [dateFormatter dateFromString: @"2012-08-08 13:00"];
-    dinnerEvent.end = [dateFormatter dateFromString: @"2012-08-08 14:00"];
-    dinnerEvent.color = [UIColor colorWithRed: 0 green: 0.9 blue: 0.1 alpha: 0.6];
-    dinnerEvent.title = @"Dinner";
-    dinnerEvent.description = @"Some sea food";
-    [result addObject: dinnerEvent];
+    for (EKEvent *event in _model.calendarEvents) {
+        ALCalendarEvent *displayEvent = [[ALCalendarEvent alloc] init];
+        displayEvent.start = event.startDate;
+        displayEvent.end = event.endDate;
+        displayEvent.title = [NSString stringWithFormat: @"%@ %@", [event.title uppercaseString], event.organizer.name];
+        displayEvent.description = event.organizer.name;
+        displayEvent.location = event.location;
 
-    return result;
+        if ([event.calendar.title isEqualToString: _model.currentRoomStringIdentifier]) {
+            displayEvent.color = [UIColor colorWithRed: 1 green: 0 blue: 0 alpha: 1.0];
+        } else {
+
+            displayEvent.color = [UIColor lightGrayColor];
+        }
+        [newEvents addObject: displayEvent];
+    }
+
+    return newEvents;
 }
 
 
@@ -115,6 +137,17 @@
     tileView.leftViewBackgroundColor = event.color;
     tileView.titleLabel.text = event.title;
     return tileView;
+}
+
+
+- (void) didUpdateCalendarEvents {
+
+    [self.calendarDayView.eventsView reloadData];
+}
+
+
+- (void) didChangeRoomType {
+    [self.calendarDayView.eventsView reloadData];
 }
 
 @end

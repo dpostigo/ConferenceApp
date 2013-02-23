@@ -26,6 +26,7 @@
         self.scrollView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
         self.scrollView.showsHorizontalScrollIndicator = NO;
         self.scrollView.directionalLockEnabled = YES;
+        self.scrollView.showsVerticalScrollIndicator = NO;
         [self addSubview: self.scrollView];
 
         self.eventsView = [[ALCalendarDayEventsView alloc] initWithFrame: CGRectMake(0, 0, self.frame.size.width, 1078)];

@@ -12,8 +12,8 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mockup1.png" id="pcv-ZA-Eu0">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1000"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="mockup2.png" id="pcv-ZA-Eu0">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="OeR-A5-Sty">
                                 <rect key="frame" x="308" y="51" width="421" height="246"/>
@@ -33,12 +33,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <view opaque="NO" contentMode="scaleToFill" id="Jq6-iz-Orn">
+                            <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Jq6-iz-Orn">
                                 <rect key="frame" x="50" y="310" width="668" height="643"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <view hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="V2u-IP-jyE">
-                                        <rect key="frame" x="20" y="20" width="628" height="587"/>
+                                        <rect key="frame" x="20" y="20" width="628" height="603"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </view>
                                 </subviews>
@@ -50,8 +50,8 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
                         <outlet property="calendarContainer" destination="V2u-IP-jyE" id="Ad8-j7-Kim"/>
-                        <outlet property="plaque1" destination="pud-Bw-JZT" id="k70-VM-TSA"/>
                         <outlet property="plaque2" destination="OeR-A5-Sty" id="idS-Xd-Eqk"/>
+                        <outlet property="roomPlaqueContainer" destination="pud-Bw-JZT" id="eBp-xb-PVl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEQ-dX-AMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,13 +77,19 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mockup1.png" width="768" height="1000"/>
+        <image name="mockup2.png" width="1536" height="2048"/>
         <image name="room_plaque.png" width="271" height="246"/>
         <image name="room_plaque_wide.png" width="421" height="246"/>
     </resources>
     <classes>
         <class className="ALCalendarDayView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ALCalendarDayView.h"/>
+        </class>
+        <class className="BasicTableViewController" superclassName="BasicViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BasicTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="table" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="BasicViewController" superclassName="VeryBasicViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BasicViewController.h"/>
@@ -92,17 +98,16 @@
                 <relationship kind="outlet" name="backgroundView" candidateClass="UIView"/>
             </relationships>
         </class>
-        <class className="MainViewController" superclassName="BasicViewController">
+        <class className="MainViewController" superclassName="BasicTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
-                <relationship kind="action" name="settingsClicked:"/>
                 <relationship kind="outlet" name="calendar" candidateClass="ALCalendarDayView"/>
                 <relationship kind="outlet" name="calendarContainer" candidateClass="UIView"/>
                 <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="embedSegue" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="navigationController" candidateClass="UINavigationController"/>
-                <relationship kind="outlet" name="plaque1" candidateClass="UIView"/>
                 <relationship kind="outlet" name="plaque2" candidateClass="UIView"/>
+                <relationship kind="outlet" name="roomPlaqueContainer" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="UIStoryboardSegue" superclassName="NSObject">
