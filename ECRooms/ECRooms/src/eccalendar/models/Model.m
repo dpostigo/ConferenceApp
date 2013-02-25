@@ -43,7 +43,6 @@
         self.calendars = [[NSMutableArray alloc] init];
 
         NSNumber *number = [[NSUserDefaults standardUserDefaults] objectForKey: @"currentRoomType"];
-        NSLog(@"number = %@", number);
 
         if (number == nil) {
             self.currentRoomType = RoomTypeCloud;
@@ -76,6 +75,17 @@
     }
 
     return YES;
+}
+
+
+- (EKCalendar *) currentCalendar {
+    NSString *currentIdentifier = self.currentRoomStringIdentifier;
+    for (EKCalendar *calendar in self.calendars) {
+        if ([calendar.title isEqualToString: currentIdentifier]) {
+            return calendar;
+        }
+    }
+    return nil;
 }
 
 

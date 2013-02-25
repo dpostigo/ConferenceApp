@@ -15,10 +15,24 @@
 - (void) main {
     [super main];
 
-    EKEventStore *store = _model.eventStore;
-    NSError *error = nil;
+    NSLog(@"_model.currentNewEvent.title = %@", _model.currentNewEvent.title);
 
-    [store saveEvent: _model.currentNewEvent span: EKSpanThisEvent commit: YES error: &error];
+    if (_model.currentNewEvent.title == nil || [_model.currentNewEvent.title isEqualToString: @""]) {
+        NSString *message = @"No event title has been set.";
+        [_model notifyDelegates: @selector(eventFailedWithMessage:) object: message];
+    }
+
+    else {
+        EKEventStore *store = _model.eventStore;
+        NSError *error = nil;
+
+        _model.currentNewEvent.calendar = _model.currentCalendar;
+        [store saveEvent: _model.currentNewEvent span: EKSpanThisEvent commit: YES error: &error];
+
+        if (error) {
+            [_model notifyDelegates: @selector(eventFailedWithMessage:) object: error.localizedDescription];
+        }
+    }
 }
 
 @end

@@ -38,7 +38,6 @@
 
 
 - (void) setBackgroundColor: (UIColor *) backgroundColor {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
     [super setBackgroundColor: backgroundColor];
     self.scrollView.backgroundColor = backgroundColor;
     self.eventsView.backgroundColor = backgroundColor;

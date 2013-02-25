@@ -8,16 +8,37 @@
 #import <Foundation/Foundation.h>
 #import "TextFieldDelegate.h"
 
+typedef enum {
+    TextFieldModeDefault = 0,
+    TextFieldModeEmail = 1,
+    TextFieldModePhone = 2,
+    TextFieldModeZip = 3
+} TextFieldMode;
 
 
-@interface TextField : UITextField <UITextFieldDelegate> {
+typedef enum {
+    InvalidTextFieldEmpty = 0,
+    InvalidTextFieldEmail = 1,
+    InvalidTextFieldPhone = 2,
+    InvalidTextFieldZip = 3
+} InvalidTextFieldType;
 
-    BOOL dismissKeyboardOnReturn;
-    TextFieldDelegate *delegateManager;
+
+@interface TextField : UITextField {
+
+
+    BOOL isNumeric;
+    NSInteger characterLimit;
+    TextFieldMode mode;
+    IBOutlet UIView *invalidView;
 
 }
 
-@property(nonatomic) BOOL dismissKeyboardOnReturn;
-@property(nonatomic, strong) TextFieldDelegate *delegateManager;
+
+@property(nonatomic) BOOL isNumeric;
+@property(nonatomic) NSInteger characterLimit;
+@property(nonatomic) TextFieldMode mode;
+@property(nonatomic, strong) UIView *invalidView;
+- (BOOL) isValid;
 
 @end

@@ -14,6 +14,7 @@
 #import "NSDate+Utils.h"
 #import "AvailabilityPlaque.h"
 #import "SaveEventOperation.h"
+#import "SVProgressHUD.h"
 
 
 @interface MainViewController () {
@@ -36,7 +37,6 @@
 
 - (void) loadView {
     [super loadView];
-    NSLog(@"%s", __PRETTY_FUNCTION__);
 
     roomPlaque = [[[NSBundle mainBundle] loadNibNamed: @"Plaque1" owner: self options: nil] objectAtIndex: 0];
     [roomPlaqueContainer addSubview: roomPlaque];
@@ -91,11 +91,9 @@
     [_queue addOperation: [[GetDataOperation alloc] init]];
 
     roomPlaque.titleLabel.text = [[_model slugForRoomType: _model.currentRoomType] uppercaseString];
-
     [availablePlaque.reserveButton addTarget: self action: @selector(handleReserveButton:) forControlEvents: UIControlEventTouchUpInside];
 
     [self subscribeTextField: availablePlaque.eventTextField];
-    [self currentRoomTypeDidChange];
     [self performSelector: @selector(fetchUpdatedInformation) withObject: nil afterDelay: 60.0];
 }
 
@@ -113,8 +111,14 @@
 }
 
 #pragma mark Callbacks
-- (void) calendarsNotFound {
 
+
+- (void) didUpdateCalendarEvents {
+    [self currentRoomTypeDidChange];
+}
+
+
+- (void) calendarsNotFound {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Elastic Calendars Not Found" message: @"You do not have any calendars associated with the EC meeting spaces." delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
     [alertView show];
 }
@@ -134,6 +138,39 @@
         if (!availablePlaque.isFlippedToFront) {
             [availablePlaque flip];
         }
+    }
+}
+
+
+- (void) eventFailedWithMessage: (NSString *) message {
+
+[SVProgressHUD showErrorWithStatus: message];
+
+//
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Could Not Create Event" message: message delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
+//    [alertView show];
+}
+
+
+- (void) eventSucceeded {
+
+    [SVProgressHUD showSuccessWithStatus: @"Success!"];
+
+    //    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Could Not Create Event" message: message delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
+    //    [alertView show];
+
+}
+
+
+#pragma mark TextFields
+
+- (void) textFieldEndedEditing: (UITextField *) aTextField {
+    [super textFieldEndedEditing: aTextField];
+
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+
+    if (aTextField == availablePlaque.eventTextField) {
+        _model.currentNewEvent.title = availablePlaque.eventTextField.text;
     }
 }
 

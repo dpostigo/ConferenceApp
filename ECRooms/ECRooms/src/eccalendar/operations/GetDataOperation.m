@@ -23,7 +23,6 @@
     EKEventStore *store = _model.eventStore;
 
     [store requestAccessToEntityType: EKEntityTypeEvent completion: ^(BOOL granted, NSError *error) {
-
         NSArray *calendars = [store calendarsForEntityType: EKEntityTypeEvent];
         for (EKCalendar *calendar in calendars) {
             if ([calendar.title isEqualToString: @"*Meeting 550 Conference"] ||
@@ -47,7 +46,6 @@
         startOfDayComponents.hour = 0;
         startOfDayComponents.minute = 0;
         startOfDayComponents.second = 0;
-        NSLog(@"currentDayComponents.hour = %i", currentDayComponents.hour);
         startOfDayComponents.day = currentDayComponents.day;
         startOfDayComponents.year = currentDayComponents.year;
         startOfDayComponents.month = currentDayComponents.month;

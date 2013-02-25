@@ -47,6 +47,7 @@
 
 - (IBAction) showDatePicker: (id) sender {
 
+    [eventTextField resignFirstResponder];
     currentButton = sender;
 
     UIView *superview = [datePickerView superview];

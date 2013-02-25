@@ -10,7 +10,6 @@
 
 #define TESTFLIGHT_TOKEN @"5923614b-ffcf-41af-8a27-1775e808a74e"
 
-
 #define CLOUD_IDENTIFIER @"*Meeting Cloud (Loft)"
 
 #define INTERACTIVE_IDENTIFIER @"*Meeting Field (Interactive)"
