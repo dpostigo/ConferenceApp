@@ -1,6 +1,7 @@
 #import "ALCalendarDayEventsView.h"
 #import "ALCalendarEvent.h"
 #import "ALCalendarTileView.h"
+#import "Model.h"
 
 
 @interface ALCalendarDayEventsView ()
@@ -144,9 +145,14 @@ static NSArray *hoursStrings;
         }
     }
 
-    indicatorImage.top =  self.topMargin + [self yValueForTime: [self hourFromDate: [NSDate date]]];
 
-    indicatorImage.centerX = self.width/2;
+    if ([Model sharedModel].isCaliforniaTime)  {
+        indicatorImage.top =  self.topMargin + [self yValueForTime: [self hourFromDate: [NSDate date]]];
+        indicatorImage.centerX = self.width/2;
+    } else {
+        indicatorImage.top =  self.topMargin + [self yValueForTime: [self hourFromDate: [Model sharedModel].currentDate]];
+        indicatorImage.centerX = self.width/2;
+    }
 }
 
 

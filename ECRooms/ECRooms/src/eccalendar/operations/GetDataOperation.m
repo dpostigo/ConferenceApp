@@ -32,37 +32,51 @@
 
                 [_model.calendars addObject: calendar];
             }
-
-
         }
 
         if ([_model.calendars count] == 0) {
             [_model notifyDelegates: @selector(calendarsNotFound) object: nil];
         }
         NSCalendar *calendar = [NSCalendar currentCalendar];
+        calendar.timeZone = [NSTimeZone timeZoneWithName: @"PST"];
 
-
+        NSDateComponents *currentDayComponents = [calendar components: (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit) fromDate: [NSDate date]];
         // Create the start date components
-        NSDateComponents *startOfDay = [[NSDateComponents alloc] init];
-        //        startOfDay.day = -1;
-        startOfDay.hour = 0;
-        NSDate *oneDayAgo = [calendar dateByAddingComponents: startOfDay toDate: [NSDate date] options: 0];
+
+        NSDateComponents *startOfDayComponents = [[NSDateComponents alloc] init];
+        startOfDayComponents.hour = 0;
+        startOfDayComponents.minute = 0;
+        startOfDayComponents.second = 0;
+        NSLog(@"currentDayComponents.hour = %i", currentDayComponents.hour);
+        startOfDayComponents.day = currentDayComponents.day;
+        startOfDayComponents.year = currentDayComponents.year;
+        startOfDayComponents.month = currentDayComponents.month;
+
+        NSDate *startOfDay = [calendar dateFromComponents: startOfDayComponents];
+
+        NSLog(@"startOfDay = %@", startOfDay);
 
         // Create the end date components
-        NSDateComponents *endOfDay = [[NSDateComponents alloc] init];
-        endOfDay.hour = 24;
+        NSDateComponents *endOfDayComponents = [[NSDateComponents alloc] init];
+        endOfDayComponents.hour = startOfDayComponents.hour;
+        endOfDayComponents.minute = startOfDayComponents.minute;
+        endOfDayComponents.second = startOfDayComponents.second;
+        endOfDayComponents.day = startOfDayComponents.day + 1;
+        endOfDayComponents.year = startOfDayComponents.year;
+        endOfDayComponents.month = startOfDayComponents.month;
 
-        NSDate *oneYearFromNow = [calendar dateByAddingComponents: endOfDay toDate: [NSDate date] options: 0];
-        NSDate *startDate = [NSDate date];
-        NSPredicate *predicate = [store predicateForEventsWithStartDate: oneDayAgo endDate: oneYearFromNow calendars: _model.calendars];
+        NSDate *endOfDay = [calendar dateFromComponents: endOfDayComponents];
+        NSLog(@"endOfDay = %@", endOfDay);
+
+        NSPredicate *predicate = [store predicateForEventsWithStartDate: startOfDay endDate: endOfDay calendars: _model.calendars];
         NSArray *events = [store eventsMatchingPredicate: predicate];
-        NSMutableArray *filteredEvents = [[NSMutableArray alloc] initWithArray: [events filteredArrayUsingPredicate: [NSPredicate predicateWithFormat: @"allDay == 0"]]];
+
+
+        //        NSMutableArray *filteredEvents = [[NSMutableArray alloc] initWithArray: [events filteredArrayUsingPredicate: [NSPredicate predicateWithFormat: @"allDay == 0"]]];
         NSMutableArray *array = [[NSMutableArray alloc] init];
 
-        for (EKEvent *event in filteredEvents) {
-            if (![event.location isEqualToString: @""]) {
-                [array addObject: event];
-            }
+        for (EKEvent *event in events) {
+            [array addObject: event];
         }
 
         _model.calendarEvents = array;

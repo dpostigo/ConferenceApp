@@ -19,6 +19,7 @@
 
     IBOutlet UIButton *startDateButton;
     IBOutlet UIButton *endDateButton;
+    IBOutlet UIButton *reserveButton;
 
 
 }
@@ -27,6 +28,7 @@
 @property(nonatomic, strong) UITextField *eventTextField;
 @property(nonatomic, strong) NSMutableArray *labels;
 @property(nonatomic, strong) NSMutableArray *imageViews;
+@property(nonatomic, strong) UIButton *reserveButton;
 - (IBAction) showDatePicker: (id) sender;
 - (IBAction) dismissDatePicker: (id) sender;
 

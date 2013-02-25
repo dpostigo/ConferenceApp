@@ -2,7 +2,6 @@
 #import <EventKit/EventKit.h>
 #import "CustomTileViewController.h"
 #import "ALCalendarEvent.h"
-#import "ALCalendarDayView.h"
 #import "ALCalendarTileView.h"
 #import "Model.h"
 
@@ -86,7 +85,6 @@
 - (id) initWithNibName: (NSString *) nibNameOrNil bundle: (NSBundle *) nibBundleOrNil {
     self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
     if (self) {
-
         calendarDayView = [[ALCalendarDayView alloc] initWithFrame: self.view.bounds];
         calendarDayView.eventsView.amPmFormat = YES;
         calendarDayView.eventsView.dataSource = self;

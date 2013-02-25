@@ -11,10 +11,12 @@
 #import "CustomTileViewController.h"
 #import "GetDataOperation.h"
 #import "RoomPlaque.h"
+#import "NSDate+Utils.h"
 #import "AvailabilityPlaque.h"
+#import "SaveEventOperation.h"
 
 
-@interface MainViewController () <ALCalendarDayEventsViewDataSource, ALCalendarDayEventsViewDelegate> {
+@interface MainViewController () {
 
     RoomPlaque *roomPlaque;
     IBOutlet UIView *roomPlaqueContainer;
@@ -90,11 +92,25 @@
 
     roomPlaque.titleLabel.text = [[_model slugForRoomType: _model.currentRoomType] uppercaseString];
 
+    [availablePlaque.reserveButton addTarget: self action: @selector(handleReserveButton:) forControlEvents: UIControlEventTouchUpInside];
+
     [self subscribeTextField: availablePlaque.eventTextField];
     [self currentRoomTypeDidChange];
+    [self performSelector: @selector(fetchUpdatedInformation) withObject: nil afterDelay: 60.0];
 }
 
 
+- (void) fetchUpdatedInformation {
+
+    _model.currentDate = [[[NSDate date] toGlobalTime] toPST];
+    [_queue addOperation: [[GetDataOperation alloc] init]];
+}
+
+
+- (IBAction) handleReserveButton: (id) sender {
+
+    [_queue addOperation: [[SaveEventOperation alloc] init]];
+}
 
 #pragma mark Callbacks
 - (void) calendarsNotFound {

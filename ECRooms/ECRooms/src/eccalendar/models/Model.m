@@ -18,6 +18,8 @@
 @synthesize currentRoomType;
 @synthesize calendars;
 @synthesize eventStore;
+@synthesize currentDate;
+@synthesize currentNewEvent;
 
 
 + (Model *) sharedModel {
@@ -48,12 +50,17 @@
         } else {
             self.currentRoomType = (RoomType) [number integerValue];
         }
+
+        self.currentDate = [[[NSDate date] toGlobalTime] toPST];
     }
 
     return self;
 }
 
 
+- (BOOL) isCaliforniaTime {
+    return [NSTimeZone systemTimeZone] == [NSTimeZone timeZoneWithName: @"EST"];
+}
 
 
 - (BOOL) availabilityForRoomType: (RoomType) roomType {

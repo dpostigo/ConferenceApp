@@ -13,11 +13,13 @@
 
 @interface Model : BasicModel {
 
+    NSDate *currentDate;
     NSArray *calendarEvents;
-    NSMutableArray *calendars;
     RoomType currentRoomType;
-
+    NSMutableArray *calendars;
     EKEventStore *eventStore;
+
+    EKEvent *currentNewEvent;
 }
 
 
@@ -25,7 +27,12 @@
 @property(nonatomic) RoomType currentRoomType;
 @property(nonatomic, strong) NSMutableArray *calendars;
 @property(nonatomic, strong) EKEventStore *eventStore;
+@property(nonatomic, strong) NSDate *currentDate;
+@property(nonatomic, strong) EKEvent *currentNewEvent;
+
+
 + (Model *) sharedModel;
+- (BOOL) isCaliforniaTime;
 - (BOOL) availabilityForRoomType: (RoomType) aRoomType;
 - (NSString *) currentRoomStringIdentifier;
 - (NSString *) currentRoomSlug;

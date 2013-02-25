@@ -8,7 +8,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "RoomPlaque.h"
 #import "Model.h"
-#import "BasicTableCell.h"
 #import "UILabel+ECCalendar.h"
 #import "BasicWhiteView.h"
 

@@ -13,5 +13,8 @@
 
 + (BOOL) date: (NSDate *) date isBetweenDate: (NSDate *) beginDate andDate: (NSDate *) endDate;
 - (BOOL) isBetweenDate: (NSDate *) beginDate andDate: (NSDate *) endDate;
+- (NSDate *) toLocalTime;
+- (NSDate *) toGlobalTime;
+- (NSDate *) toPST;
 
 @end

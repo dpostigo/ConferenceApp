@@ -38,6 +38,7 @@
 		7CA4443C03D9800E560C68A1 /* TapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4448D310466D9B42CAA5A /* TapDetectingView.m */; };
 		7CA444EFC09F4ACD21C2075D /* BasicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA440002B6DADB5E265A341 /* BasicLibrary.m */; };
 		7CA4450AD32A42FF612A38A1 /* PlaqueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA446EC1A29EF25EB3320A2 /* PlaqueView.m */; };
+		7CA446231B56C2D799EC0857 /* SaveEventOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA446827566907110C35502 /* SaveEventOperation.m */; };
 		7CA44648174B26986DD7DAEC /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4479777760D3029ABA651 /* CustomLabel.m */; };
 		7CA446617542C572C67264A0 /* TableRowObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44AFDF317F3DDC298D272 /* TableRowObject.m */; };
 		7CA44699465FDE4404C8238E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA44DAE6A35A15973A742E9 /* MainStoryboard.storyboard */; };
@@ -130,6 +131,7 @@
 		7CA445FA6B9AC7A570AC7D2F /* CBLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBLayer.h; path = src/toolkit/CBButtons/CBLayer.h; sourceTree = "<group>"; };
 		7CA4460CFA85704EB7A582CA /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Utils.h"; path = "src/utils/NSDate+Utils.h"; sourceTree = "<group>"; };
 		7CA4462B25DFF86415053283 /* SaveDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaveDataOperation.m; path = src/eccalendar/operations/SaveDataOperation.m; sourceTree = "<group>"; };
+		7CA446827566907110C35502 /* SaveEventOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaveEventOperation.m; path = src/eccalendar/operations/SaveEventOperation.m; sourceTree = "<group>"; };
 		7CA446926218C11435558B6D /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Utils.h"; path = "src/utils/UIColor+Utils.h"; sourceTree = "<group>"; };
 		7CA446A4C1BE2393441B06A3 /* TableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableSection.h; path = src/table/TableSection.h; sourceTree = "<group>"; };
 		7CA446DEABC55BDE301858C0 /* Plaque2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Plaque2.xib; path = src/xibs/Plaque2.xib; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		7CA44A4E26743675B8B29B4E /* AvailabilityPlaque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvailabilityPlaque.m; path = src/eccalendar/views/AvailabilityPlaque.m; sourceTree = "<group>"; };
 		7CA44A597255E591874F395D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = src/toolkit/TestFlight/libTestFlight.a; sourceTree = "<group>"; };
 		7CA44A6431C731F69030C79E /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextField.m; path = src/eccalendar/controls/CustomTextField.m; sourceTree = "<group>"; };
+		7CA44A8A4C1C935FCA832C38 /* SaveEventOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaveEventOperation.h; path = src/eccalendar/operations/SaveEventOperation.h; sourceTree = "<group>"; };
 		7CA44AFCC47A9E82A96DFEEF /* MAWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAWeekView.h; path = src/libs/CalendarUI/MAWeekView.h; sourceTree = "<group>"; };
 		7CA44AFDF317F3DDC298D272 /* TableRowObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableRowObject.m; path = src/table/TableRowObject.m; sourceTree = "<group>"; };
 		7CA44B0DE1FDEF800F0B6469 /* DayViewExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayViewExampleController.m; path = src/libs/CalendarUI/DayViewExampleController.m; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				7CA447C87C91D1269324C987 /* CustomButton.h */,
 				7CA44311D808D4113DF2071E /* NSDate+Utils.m */,
 				7CA4460CFA85704EB7A582CA /* NSDate+Utils.h */,
+				7CA446827566907110C35502 /* SaveEventOperation.m */,
+				7CA44A8A4C1C935FCA832C38 /* SaveEventOperation.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -491,6 +496,7 @@
 				7CA44FE0F563B1F61EB768B7 /* CustomTextField.m in Sources */,
 				7CA44027C7714398DFA1753E /* CustomButton.m in Sources */,
 				7CA44204415A9AF5C2A91DE3 /* NSDate+Utils.m in Sources */,
+				7CA446231B56C2D799EC0857 /* SaveEventOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

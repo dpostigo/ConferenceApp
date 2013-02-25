@@ -8,17 +8,16 @@
 #import <Foundation/Foundation.h>
 #import "BasicViewController.h"
 #import "ALCalendar.h"
-#import "AvailabilityPlaque.h"
+#import "ALCalendarDayEventsView.h"
 
 
 
 
-@interface MainViewController : BasicViewController {
+@interface MainViewController : BasicViewController <ALCalendarDayEventsViewDataSource, ALCalendarDayEventsViewDelegate> {
 
 
 }
 
 
-- (IBAction) settingsClicked: (id) sender;
 
 @end

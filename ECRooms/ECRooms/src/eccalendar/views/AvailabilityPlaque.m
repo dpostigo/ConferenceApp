@@ -8,7 +8,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import <EventKit/EventKit.h>
 #import "AvailabilityPlaque.h"
-#import "SVSegmentedControl.h"
 #import "Model.h"
 
 
@@ -21,13 +20,13 @@
 @synthesize eventTextField;
 @synthesize labels;
 @synthesize imageViews;
+@synthesize reserveButton;
 
 
 - (IBAction) flip {
-
     if ([front superview]) {
         newEvent = [EKEvent eventWithEventStore: [Model sharedModel].eventStore];
-        NSLog(@"Created event.");
+        [Model sharedModel].currentNewEvent = newEvent;
     }
     [super flip];
 }
@@ -39,7 +38,10 @@
     datePickerView.clipsToBounds = YES;
     datePickerView.layer.masksToBounds = YES;
     datePickerView.layer.cornerRadius = 5.0;
+}
 
+
+- (IBAction) handleReserveButton: (id) sender {
 }
 
 
