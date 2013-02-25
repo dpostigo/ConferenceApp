@@ -146,7 +146,7 @@
 }
 
 
-- (void) didChangeRoomType {
+- (void) currentRoomTypeDidChange {
     [self.calendarDayView.eventsView reloadData];
 }
 

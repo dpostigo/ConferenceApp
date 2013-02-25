@@ -29,15 +29,11 @@
     if (self) {
 
         rooms = [[NSMutableArray alloc] init];
-
         [rooms addObject: @"Meeting Cloud 1"];
         [rooms addObject: @"Meeting Field (Interactive)"];
         [rooms addObject: @"Meeting 550 Conference"];
 
         picker.height = 600;
-
-        NSLog(@"titleLabel = %@", titleLabel);
-
         [table registerClass: [UITableViewCell class] forCellReuseIdentifier: @"RoomCell"];
     }
 
@@ -61,7 +57,10 @@
 - (void) pickerView: (UIPickerView *) pickerView didSelectRow: (NSInteger) row inComponent: (NSInteger) component {
     NSLog(@"%s", __PRETTY_FUNCTION__);
 
-    [Model sharedModel].currentRoomType = (RoomType *) row;
+    RoomType roomType = (RoomType) row;
+    [Model sharedModel].currentRoomType = roomType;
+
+    titleLabel.text = [[Model sharedModel] slugForRoomType: roomType];
 }
 
 
@@ -118,7 +117,9 @@
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
 
     [Model sharedModel].currentRoomType = (RoomType) indexPath.row;
-    [[Model sharedModel] notifyDelegates: @selector(didChangeRoomType) object: nil];
+    NSString *roomTypeString = [[Model sharedModel] currentRoomSlug];
+    self.titleLabel.text = roomTypeString;
+    [[Model sharedModel] notifyDelegates: @selector(currentRoomTypeDidChange) object: nil];
 }
 
 @end

@@ -35,6 +35,7 @@
 @property(nonatomic, strong) UIColor *timeLabelsColor;
 @property(nonatomic, strong) UIFont *timeLabelsFont;
 @property(nonatomic) float gutterWidth;
+@property(nonatomic, strong) UIImageView *indicatorImage;
 - (void) reloadData;
 
 @end

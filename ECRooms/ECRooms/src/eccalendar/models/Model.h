@@ -26,8 +26,12 @@
 @property(nonatomic, strong) NSMutableArray *calendars;
 @property(nonatomic, strong) EKEventStore *eventStore;
 + (Model *) sharedModel;
+- (BOOL) availabilityForRoomType: (RoomType) aRoomType;
 - (NSString *) currentRoomStringIdentifier;
+- (NSString *) currentRoomSlug;
 - (NSString *) slugForRoomType: (RoomType) aType;
+- (NSString *) stringIdentifierForRoomType: (RoomType) aType;
+- (RoomType) roomTypeForIdentifier: (NSString *) identifier;
 - (NSArray *) currentCalendarEvents;
 
 @end

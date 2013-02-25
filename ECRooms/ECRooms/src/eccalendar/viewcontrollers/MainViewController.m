@@ -8,20 +8,21 @@
 #import "MainViewController.h"
 #import "ALCalendarDayEventsView.h"
 #import "ALCalendarDayView.h"
-#import "ALCalendarEvent.h"
 #import "CustomTileViewController.h"
 #import "GetDataOperation.h"
 #import "RoomPlaque.h"
-#import "BasicTableCell.h"
+#import "AvailabilityPlaque.h"
 
 
 @interface MainViewController () <ALCalendarDayEventsViewDataSource, ALCalendarDayEventsViewDelegate> {
 
     RoomPlaque *roomPlaque;
+    IBOutlet UIView *roomPlaqueContainer;
+    AvailabilityPlaque *availablePlaque;
+    IBOutlet UIView *availabilityContainer;
+
     IBOutlet UIView *calendarContainer;
     IBOutlet ALCalendarDayView *calendar;
-    IBOutlet UIView *roomPlaqueContainer;
-    IBOutlet UIView *plaque2;
 }
 
 
@@ -38,14 +39,28 @@
     roomPlaque = [[[NSBundle mainBundle] loadNibNamed: @"Plaque1" owner: self options: nil] objectAtIndex: 0];
     [roomPlaqueContainer addSubview: roomPlaque];
 
-    [plaque2 addSubview: [[[NSBundle mainBundle] loadNibNamed: @"Plaque2" owner: self options: nil] objectAtIndex: 0]];
-}
+    availablePlaque = [[[NSBundle mainBundle] loadNibNamed: @"Plaque2" owner: self options: nil] objectAtIndex: 0];
+    [availabilityContainer addSubview: availablePlaque];
 
+    NSArray *array = [NSArray arrayWithObjects: CLOUD_IDENTIFIER, INTERACTIVE_IDENTIFIER, CONFERENCE_IDENTIFIER, nil];
 
-- (void) awakeFromNib {
-    [super awakeFromNib];
+    for (UILabel *label in availablePlaque.labels) {
 
-    NSLog(@"roomPlaque.titleLabel = %@", roomPlaque.titleLabel);
+        NSInteger index = [availablePlaque.labels indexOfObject: label];
+        NSString *identifier = [array objectAtIndex: index];
+        RoomType roomType = [_model roomTypeForIdentifier: identifier];
+        label.text = [_model slugForRoomType: roomType];
+
+        BOOL isAvailable = [_model availabilityForRoomType: roomType];
+        UIImageView *imageView = [availablePlaque.imageViews objectAtIndex: index];
+
+        if (isAvailable) {
+            imageView.image = [UIImage imageNamed: @"available-control.png"];
+        } else {
+
+            imageView.image = [UIImage imageNamed: @"in-use-control.png"];
+        }
+    }
 }
 
 
@@ -67,7 +82,6 @@
     calendarView.backgroundColor = [UIColor clearColor];
     calendarView.eventsView.timeLabelsFont = [UIFont boldSystemFontOfSize: 12.0];
     calendarView.eventsView.timeLabelsFont = [UIFont fontWithName: @"Antartida-Black" size: 12.0];
-    calendarView.eventsView.leftMargin = 95.0;
     calendarView.scrollView.contentSize = CGSizeMake(calendarView.width, calendarView.scrollView.contentSize.height);
 
     calendarView.scrollView.contentOffset = CGPointMake(0, calendarView.eventsView.height - calendarView.scrollView.height);
@@ -75,12 +89,36 @@
     [_queue addOperation: [[GetDataOperation alloc] init]];
 
     roomPlaque.titleLabel.text = [[_model slugForRoomType: _model.currentRoomType] uppercaseString];
+
+    [self subscribeTextField: availablePlaque.eventTextField];
+    [self currentRoomTypeDidChange];
 }
 
 
+
+#pragma mark Callbacks
 - (void) calendarsNotFound {
 
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Elastic Calendars Not Found" message: @"You do not have any calendars associated with the EC meeting spaces." delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
     [alertView show];
 }
+
+
+- (void) currentRoomTypeDidChange {
+
+    BOOL isAvailable = [_model availabilityForRoomType: _model.currentRoomType];
+
+    if (isAvailable) {
+
+        if (availablePlaque.isFlippedToFront) {
+            [availablePlaque flip];
+        }
+    } else {
+
+        if (!availablePlaque.isFlippedToFront) {
+            [availablePlaque flip];
+        }
+    }
+}
+
 @end

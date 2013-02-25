@@ -32,6 +32,8 @@
 
                 [_model.calendars addObject: calendar];
             }
+
+
         }
 
         if ([_model.calendars count] == 0) {
@@ -41,14 +43,16 @@
 
 
         // Create the start date components
-        NSDateComponents *oneDayAgoComponents = [[NSDateComponents alloc] init];
-        oneDayAgoComponents.day = -1;
-        NSDate *oneDayAgo = [calendar dateByAddingComponents: oneDayAgoComponents toDate: [NSDate date] options: 0];
+        NSDateComponents *startOfDay = [[NSDateComponents alloc] init];
+        //        startOfDay.day = -1;
+        startOfDay.hour = 0;
+        NSDate *oneDayAgo = [calendar dateByAddingComponents: startOfDay toDate: [NSDate date] options: 0];
 
         // Create the end date components
-        NSDateComponents *oneYearFromNowComponents = [[NSDateComponents alloc] init];
-        oneYearFromNowComponents.day = 2;
-        NSDate *oneYearFromNow = [calendar dateByAddingComponents: oneYearFromNowComponents toDate: [NSDate date] options: 0];
+        NSDateComponents *endOfDay = [[NSDateComponents alloc] init];
+        endOfDay.hour = 24;
+
+        NSDate *oneYearFromNow = [calendar dateByAddingComponents: endOfDay toDate: [NSDate date] options: 0];
         NSDate *startDate = [NSDate date];
         NSPredicate *predicate = [store predicateForEventsWithStartDate: oneDayAgo endDate: oneYearFromNow calendars: _model.calendars];
         NSArray *events = [store eventsMatchingPredicate: predicate];
@@ -57,7 +61,6 @@
 
         for (EKEvent *event in filteredEvents) {
             if (![event.location isEqualToString: @""]) {
-
                 [array addObject: event];
             }
         }

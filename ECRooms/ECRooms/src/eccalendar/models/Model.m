@@ -7,6 +7,7 @@
 
 #import <EventKit/EventKit.h>
 #import "Model.h"
+#import "NSDate+Utils.h"
 
 
 @implementation Model {
@@ -43,7 +44,6 @@
         NSLog(@"number = %@", number);
 
         if (number == nil) {
-            NSLog(@"Number is nil.");
             self.currentRoomType = RoomTypeCloud;
         } else {
             self.currentRoomType = (RoomType) [number integerValue];
@@ -54,8 +54,31 @@
 }
 
 
+
+
+- (BOOL) availabilityForRoomType: (RoomType) roomType {
+
+    NSDate *date = [NSDate date];
+    NSArray *events = [self eventsForRoom: roomType];
+
+    for (EKEvent *event in events) {
+
+        if ([date isBetweenDate: event.startDate andDate: event.endDate]) {
+            return NO;
+        }
+    }
+
+    return YES;
+}
+
+
 - (NSString *) currentRoomStringIdentifier {
     return [self stringIdentifierForRoomType: self.currentRoomType];
+}
+
+
+- (NSString *) currentRoomSlug {
+    return [self slugForRoomType: self.currentRoomType];
 }
 
 
@@ -75,42 +98,43 @@
 
 - (NSString *) stringIdentifierForRoomType: (RoomType) aType {
     if (aType == RoomTypeCloud) {
-        return @"*Meeting Cloud (Loft)";
+        return CLOUD_IDENTIFIER;
     } else if (aType == RoomTypeFieldInteractive) {
-        return @"*Meeting Field (Interactive)";
+        return INTERACTIVE_IDENTIFIER;
     } else if (aType == RoomType550Conference) {
-        return @"*Meeting 550 Conference";
+        return CONFERENCE_IDENTIFIER;
     }
 
     return @"No name";
 }
 
 
-- (NSArray *) eventsForRoom: (RoomType) aType {
-    return nil;
+- (RoomType) roomTypeForIdentifier: (NSString *) identifier {
+    if ([identifier isEqualToString: CLOUD_IDENTIFIER]) {
+        return RoomTypeCloud;
+    } else if ([identifier isEqualToString: INTERACTIVE_IDENTIFIER]) {
+        return RoomTypeFieldInteractive;
+    } else if ([identifier isEqualToString: CONFERENCE_IDENTIFIER]) {
+        return RoomType550Conference;
+    }
+    return RoomTypeNotFound;
 }
 
 
-- (NSArray *) currentCalendarEvents {
-
-    NSString *roomName = [self stringIdentifierForRoomType: self.currentRoomType];
-    NSLog(@"roomName = %@", roomName);
-
+- (NSArray *) eventsForRoom: (RoomType) aType {
+    NSString *roomName = [self stringIdentifierForRoomType: aType];
     NSMutableArray *events = [[NSMutableArray alloc] init];
     for (EKEvent *event in self.calendarEvents) {
-
-        NSLog(@"event.calendar.title = %@", event.calendar.title);
         if ([event.calendar.title isEqualToString: roomName]) {
             [events addObject: event];
         }
     }
     return events;
+}
 
-    NSArray *array = [self.calendarEvents filteredArrayUsingPredicate: [NSPredicate predicateWithFormat: @"SELF.calendar.title == [c] %@", roomName]];
 
-    NSLog(@"array = %@", array);
-
-    return array;
+- (NSArray *) currentCalendarEvents {
+    return [self eventsForRoom: self.currentRoomType];
 }
 
 @end

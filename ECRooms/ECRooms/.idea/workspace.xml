@@ -17,96 +17,62 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_IPAD" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6.1_2" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GetDataOperation.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m">
+      <file leaf-file-name="AppConstants.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/models/AppConstants.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="64" selection-start="1055" selection-end="1072" vertical-scroll-proportion="0.0">
+            <state line="13" column="24" selection-start="228" selection-end="244" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ALCalendarTileView.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarTileView.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="52" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ALCalendarTileView.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarTileView.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="11" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomTileViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="55" selection-start="1869" selection-end="1869" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomTileViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ALCalendar.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendar.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="11" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainViewController.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="21" selection-start="2680" selection-end="2680" vertical-scroll-proportion="1.615942">
+            <state line="96" column="40" selection-start="3215" selection-end="3215" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="n#loadView#0;n#MainViewController#0" expanded="true" />
                 <element signature="n#viewDidLoad#0;n#MainViewController#0" expanded="true" />
+                <element signature="n#currentRoomTypeDidChange#0;n#MainViewController#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ALCalendarDayEventsView.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m">
+      <file leaf-file-name="Model.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="4" selection-start="6091" selection-end="6091" vertical-scroll-proportion="0.0">
+            <state line="24" column="30" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ALCalendarDayEventsView.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.h">
+      <file leaf-file-name="RoomPlaque.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="46" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0">
+            <state line="101" column="29" selection-start="2378" selection-end="2378" vertical-scroll-proportion="0.58928573">
+              <folding>
+                <element signature="n#initWithCoder:#0;n#RoomPlaque#0" expanded="true" />
+                <element signature="n#awakeFromNib#0;n#RoomPlaque#0" expanded="true" />
+                <element signature="n#pickerView:didSelectRow:inComponent:#0;n#RoomPlaque#0" expanded="true" />
+                <element signature="n#pickerView:titleForRow:forComponent:#0;n#RoomPlaque#0" expanded="true" />
+                <element signature="n#numberOfComponentsInPickerView:#0;n#RoomPlaque#0" expanded="true" />
+                <element signature="n#pickerView:numberOfRowsInComponent:#0;n#RoomPlaque#0" expanded="true" />
+                <element signature="n#tableView:numberOfRowsInSection:#0;n#RoomPlaque#0" expanded="true" />
+                <element signature="n#tableView:didSelectRowAtIndexPath:#0;n#RoomPlaque#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoomPlaque.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="11" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,16 +81,34 @@
       <file leaf-file-name="PlaqueView.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+            <state line="21" column="31" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#awakeFromNib#0;n#PlaqueView#0" expanded="true" />
+                <element signature="n#flip#0;n#PlaqueView#0" expanded="true" />
+                <element signature="n#flipToBack#0;n#PlaqueView#0" expanded="true" />
+                <element signature="e#975#1182#0" expanded="true" />
+                <element signature="e#1215#1306#0" expanded="true" />
+                <element signature="n#flipToFront#0;n#PlaqueView#0" expanded="true" />
+                <element signature="e#1630#1835#0" expanded="true" />
+                <element signature="e#1868#1959#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaqueView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/views/PlaqueView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="26" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomPlaque.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h">
+      <file leaf-file-name="AvailabilityPlaque.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="28" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+            <state line="20" column="37" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,17 +117,47 @@
       <file leaf-file-name="AvailabilityPlaque.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="3" selection-start="410" selection-end="1076" vertical-scroll-proportion="0.0">
+            <state line="41" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomPlaque.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m">
+      <file leaf-file-name="CustomTileViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="70" selection-start="2708" selection-end="2708" vertical-scroll-proportion="0.0">
+            <state line="148" column="33" selection-start="4359" selection-end="4383" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSDate+Utils.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/NSDate+Utils.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="15" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSDate+Utils.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/NSDate+Utils.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#init#0;n#Model#0" expanded="true" />
+                <element signature="n#availabilityForRoomType:#0;n#Model#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,19 +171,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.h">
+      <file leaf-file-name="GetDataOperation.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="29" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="25" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+            <state line="63" column="35" selection-start="2334" selection-end="2334" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -184,10 +189,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ALCalendarDayEventsView.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="24" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1361821898000" expanded="true" signature="239:9277" placeholder="..." />
+                <marker date="1361821898000" expanded="true" signature="240:299" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ALCalendarDayEventsView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="11" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ALCalendarDayView.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="57" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0">
+            <state line="6" column="40" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -212,27 +238,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarEvent.h" />
-        <option value="$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.h" />
-        <option value="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h" />
-        <option value="$PROJECT_DIR$/src/eccalendar/viewcontrollers/BasicViewController.m" />
-        <option value="$PROJECT_DIR$/src/eccalendar/models/Model.h" />
-        <option value="$PROJECT_DIR$/BasicProject/main.m" />
-        <option value="$PROJECT_DIR$/src/eccalendar/utils/UILabel+ECCalendar.m" />
-        <option value="$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m" />
-        <option value="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/controls/CustomTextField.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/controls/CustomButton.h" />
+        <option value="$PROJECT_DIR$/src/eccalendar/controls/CustomButton.m" />
         <option value="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m" />
-        <option value="$PROJECT_DIR$/src/eccalendar/models/Model.m" />
-        <option value="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m" />
-        <option value="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarTileView.m" />
-        <option value="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.h" />
         <option value="$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/models/AppConstants.h" />
+        <option value="$PROJECT_DIR$/src/eccalendar/models/RoomType.h" />
+        <option value="$PROJECT_DIR$/src/utils/NSDate+Utils.m" />
+        <option value="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.h" />
+        <option value="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/models/Model.m" />
         <option value="$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="42" />
+    <option name="y" value="27" />
     <option name="width" value="1440" />
     <option name="height" value="807" />
   </component>
@@ -320,47 +347,25 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ECRooms" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="table" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SVSegmentedControl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,6 +408,32 @@
               <option name="myItemId" value="eccalendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viewcontrollers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ECRooms" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eccalendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -443,8 +474,48 @@
               <option name="myItemId" value="eccalendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ECRooms" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eccalendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ECRooms" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eccalendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,15 +587,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="807" extended-state="0" />
-    <editor active="true" />
+    <frame x="42" y="27" width="1440" height="807" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.027977044" sideWeight="0.6002805" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30129126" sideWeight="0.6002805" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3997195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15566714" sideWeight="0.6479663" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.223099" sideWeight="0.6479663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35203367" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -532,7 +603,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -593,118 +664,139 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayView.h">
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/controls/CustomTextField.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayView.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="57" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BasicProject/main.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="345" selection-end="345" vertical-scroll-proportion="0.54347825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="4" selection-start="6091" selection-end="6091" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="46" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="25" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/utils/UILabel+ECCalendar.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#format#0;n#UILabel#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarTileView.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="52" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="44" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarTileView.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="11" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+        <state line="18" column="61" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="55" selection-start="1869" selection-end="1869" vertical-scroll-proportion="0.0">
+        <state line="148" column="33" selection-start="4359" selection-end="4383" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m">
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/controls/CustomButton.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="64" selection-start="1055" selection-end="1072" vertical-scroll-proportion="0.0">
+        <state line="34" column="35" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/PlaqueView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="31" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#awakeFromNib#0;n#PlaqueView#0" expanded="true" />
+            <element signature="n#flip#0;n#PlaqueView#0" expanded="true" />
+            <element signature="n#flipToBack#0;n#PlaqueView#0" expanded="true" />
+            <element signature="e#975#1182#0" expanded="true" />
+            <element signature="e#1215#1306#0" expanded="true" />
+            <element signature="n#flipToFront#0;n#PlaqueView#0" expanded="true" />
+            <element signature="e#1630#1835#0" expanded="true" />
+            <element signature="e#1868#1959#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="37" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/NSDate+Utils.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="15" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/SaveDataOperation.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="104" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/models/AppConstants.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="228" selection-end="244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicProject/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="80" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="30" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#init#0;n#Model#0" expanded="true" />
+            <element signature="n#availabilityForRoomType:#0;n#Model#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="21" selection-start="2680" selection-end="2680" vertical-scroll-proportion="1.615942">
+        <state line="96" column="40" selection-start="3215" selection-end="3215" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="n#loadView#0;n#MainViewController#0" expanded="true" />
             <element signature="n#viewDidLoad#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#currentRoomTypeDidChange#0;n#MainViewController#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="29" selection-start="2378" selection-end="2378" vertical-scroll-proportion="0.58928573">
+          <folding>
+            <element signature="n#initWithCoder:#0;n#RoomPlaque#0" expanded="true" />
+            <element signature="n#awakeFromNib#0;n#RoomPlaque#0" expanded="true" />
+            <element signature="n#pickerView:didSelectRow:inComponent:#0;n#RoomPlaque#0" expanded="true" />
+            <element signature="n#pickerView:titleForRow:forComponent:#0;n#RoomPlaque#0" expanded="true" />
+            <element signature="n#numberOfComponentsInPickerView:#0;n#RoomPlaque#0" expanded="true" />
+            <element signature="n#pickerView:numberOfRowsInComponent:#0;n#RoomPlaque#0" expanded="true" />
+            <element signature="n#tableView:numberOfRowsInSection:#0;n#RoomPlaque#0" expanded="true" />
+            <element signature="n#tableView:didSelectRowAtIndexPath:#0;n#RoomPlaque#0" expanded="true" />
           </folding>
         </state>
       </provider>

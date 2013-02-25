@@ -8,11 +8,13 @@
 #import <Foundation/Foundation.h>
 #import "BasicViewController.h"
 #import "ALCalendar.h"
+#import "AvailabilityPlaque.h"
 
 
 
 
 @interface MainViewController : BasicViewController {
+
 
 }
 

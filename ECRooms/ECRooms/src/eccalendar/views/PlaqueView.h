@@ -14,9 +14,12 @@
 
     BOOL isFront;
 
+    BOOL isFlippedToFront;
+
 }
 
 
+@property(nonatomic) BOOL isFlippedToFront;
 - (IBAction) flip;
 
 @end

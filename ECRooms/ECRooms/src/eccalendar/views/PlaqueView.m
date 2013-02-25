@@ -12,10 +12,14 @@
 }
 
 
+@synthesize isFlippedToFront;
+
+
 - (id) initWithCoder: (NSCoder *) aDecoder {
     self = [super initWithCoder: aDecoder];
     if (self) {
 
+        isFlippedToFront = YES;
         [self addSubview: front];
     }
 
@@ -33,6 +37,16 @@
 
     NSLog(@"%s", __PRETTY_FUNCTION__);
 
+    if ([front superview]) {
+        [self flipToBack];
+    } else {
+        [self flipToFront];
+    }
+}
+
+
+- (void) flipToBack {
+
     UIViewAnimationOptions options = [front superview] ? UIViewAnimationOptionTransitionFlipFromLeft: UIViewAnimationOptionTransitionFlipFromLeft;
 
     [UIView transitionWithView: self
@@ -42,15 +56,35 @@
 
                         if ([front superview]) {
                             [front removeFromSuperview];
-                            [self addSubview: back];
                         }
 
-                        else {
-
-                            [back removeFromSuperview];
-                            [self addSubview: front];
-                        }
+                        [self addSubview: back];
                     }
-                    completion: NULL];
+                    completion: ^(BOOL completion) {
+                        isFlippedToFront = NO;
+
+
+                    }];
+}
+
+
+- (void) flipToFront {
+
+    UIViewAnimationOptions options = [front superview] ? UIViewAnimationOptionTransitionFlipFromLeft: UIViewAnimationOptionTransitionFlipFromLeft;
+
+    [UIView transitionWithView: self
+                      duration: 0.5
+                       options: options
+                    animations: ^{
+
+                        if ([back superview]) {
+                            [back removeFromSuperview];
+                        }
+                        [self addSubview: front];
+                    }
+                    completion: ^(BOOL completion) {
+
+                        isFlippedToFront = YES;
+                    }];
 }
 @end

@@ -10,6 +10,7 @@
 typedef enum {
     RoomTypeCloud = 0,
     RoomTypeFieldInteractive = 1,
-    RoomType550Conference = 2
+    RoomType550Conference = 2,
+    RoomTypeNotFound = 3
 } RoomType;
 

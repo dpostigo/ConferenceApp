@@ -22,11 +22,13 @@
 		0348A7E31679497B00BDC6A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0348A7E21679497B00BDC6A3 /* QuartzCore.framework */; };
 		0348A7F916794AA700BDC6A3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0348A7F816794AA700BDC6A3 /* libz.dylib */; };
 		036AAB8C16D82DF40047787D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036AAB8B16D82DF40047787D /* EventKit.framework */; };
+		7CA44027C7714398DFA1753E /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA448CFDC951DC375F4F896 /* CustomButton.m */; };
 		7CA440776EC534B3540FB8EC /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA449AB0EEA64E50D9B7E84 /* UIColor+Utils.m */; };
 		7CA441238B506EE2CB470380 /* DayViewExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44B0DE1FDEF800F0B6469 /* DayViewExampleController.m */; };
 		7CA4415ADF7573D4378B298C /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA44A597255E591874F395D /* libTestFlight.a */; };
 		7CA441C0B1F2D5D58247CE64 /* ALCalendarDayEventsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4488EF1B5C699F1EC00D0 /* ALCalendarDayEventsView.m */; };
 		7CA441D0918BA99E9218CC35 /* GetDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44098306A98300B197632 /* GetDataOperation.m */; };
+		7CA44204415A9AF5C2A91DE3 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44311D808D4113DF2071E /* NSDate+Utils.m */; };
 		7CA4423937F5C64A24B4A147 /* ALCalendarTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44574F3E7C37DD3CC6031 /* ALCalendarTileView.m */; };
 		7CA4433D9161FCB45A0078F4 /* BasicWhiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA443BC854C214175D31274 /* BasicWhiteView.m */; };
 		7CA443B6786C934BFCF39095 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA447526C0870E6D31B7955 /* BasicViewController.m */; };
@@ -65,7 +67,9 @@
 		7CA44EE395A2AA60A31497A0 /* BasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44C33806448F4A0C2A111 /* BasicModel.m */; };
 		7CA44EE5F5A7671D38D4822F /* ALCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA440645F118E876A7CACF4 /* ALCalendar.m */; };
 		7CA44F04A52A9F9BA3F8C341 /* DeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA447E05D2A96881A230072 /* DeviceUtils.m */; };
+		7CA44F55B23A7BCA82882B8C /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44C92C904210CFFDC7B66 /* AvailabilityViewController.m */; };
 		7CA44F76A6F4F070B9FBC3AB /* UILabel+ECCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44F268F0A0E22442F85E1 /* UILabel+ECCalendar.m */; };
+		7CA44FE0F563B1F61EB768B7 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44A6431C731F69030C79E /* CustomTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +92,7 @@
 		0348A7F816794AA700BDC6A3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		036AAB8B16D82DF40047787D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		7CA440002B6DADB5E265A341 /* BasicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicLibrary.m; path = src/models/BasicLibrary.m; sourceTree = "<group>"; };
+		7CA440104A3C847D02B45AA2 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTextField.h; path = src/eccalendar/controls/CustomTextField.h; sourceTree = "<group>"; };
 		7CA440645F118E876A7CACF4 /* ALCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendar.m; path = src/toolkit/ALCalendarDayView/ALCalendar.m; sourceTree = "<group>"; };
 		7CA4406E25C453023A27920B /* MAEventKitDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAEventKitDataSource.h; path = src/libs/CalendarUI/MAEventKitDataSource.h; sourceTree = "<group>"; };
 		7CA44098306A98300B197632 /* GetDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetDataOperation.m; path = src/eccalendar/operations/GetDataOperation.m; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 		7CA442855C5395A5923EE458 /* BasicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicModel.h; path = src/models/BasicModel.h; sourceTree = "<group>"; };
 		7CA442CD1F26628748308CA4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = src/eccalendar/viewcontrollers/MainViewController.h; sourceTree = "<group>"; };
 		7CA442D28806375D0ADAFD62 /* ALCalendarTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarTileView.h; path = src/toolkit/ALCalendarDayView/ALCalendarTileView.h; sourceTree = "<group>"; };
+		7CA44311D808D4113DF2071E /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Utils.m"; path = "src/utils/NSDate+Utils.m"; sourceTree = "<group>"; };
 		7CA44317D660159EC0A9E7C0 /* SVSegmentedThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVSegmentedThumb.m; path = src/libs/SVSegmentedControl/SVSegmentedThumb.m; sourceTree = "<group>"; };
 		7CA443524E88CAAE869C8863 /* AvailabilityPlaque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvailabilityPlaque.h; path = src/eccalendar/views/AvailabilityPlaque.h; sourceTree = "<group>"; };
 		7CA4436522E5E8C1C8C37642 /* MAEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAEvent.h; path = src/libs/CalendarUI/MAEvent.h; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 		7CA44587F7ECA4311E456668 /* MADayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADayView.m; path = src/libs/CalendarUI/MADayView.m; sourceTree = "<group>"; };
 		7CA445F4F8AA0ACAAC4D6D32 /* SVSegmentedThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVSegmentedThumb.h; path = src/libs/SVSegmentedControl/SVSegmentedThumb.h; sourceTree = "<group>"; };
 		7CA445FA6B9AC7A570AC7D2F /* CBLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBLayer.h; path = src/toolkit/CBButtons/CBLayer.h; sourceTree = "<group>"; };
+		7CA4460CFA85704EB7A582CA /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Utils.h"; path = "src/utils/NSDate+Utils.h"; sourceTree = "<group>"; };
 		7CA4462B25DFF86415053283 /* SaveDataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaveDataOperation.m; path = src/eccalendar/operations/SaveDataOperation.m; sourceTree = "<group>"; };
 		7CA446926218C11435558B6D /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Utils.h"; path = "src/utils/UIColor+Utils.h"; sourceTree = "<group>"; };
 		7CA446A4C1BE2393441B06A3 /* TableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableSection.h; path = src/table/TableSection.h; sourceTree = "<group>"; };
@@ -132,6 +139,7 @@
 		7CA447557B77CA37DFF56A01 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = src/toolkit/TestFlight/TestFlight.h; sourceTree = "<group>"; };
 		7CA44779CB9702A5E2A4E001 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = src/eccalendar/models/Model.h; sourceTree = "<group>"; };
 		7CA4479777760D3029ABA651 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomLabel.m; path = src/eccalendar/controls/CustomLabel.m; sourceTree = "<group>"; };
+		7CA447C87C91D1269324C987 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomButton.h; path = src/eccalendar/controls/CustomButton.h; sourceTree = "<group>"; };
 		7CA447CB57671B0FF9136559 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConstants.h; path = src/eccalendar/models/AppConstants.h; sourceTree = "<group>"; };
 		7CA447E05D2A96881A230072 /* DeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceUtils.m; path = src/utils/DeviceUtils.m; sourceTree = "<group>"; };
 		7CA4485240039A0575525251 /* ALCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendarEvent.m; path = src/toolkit/ALCalendarDayView/ALCalendarEvent.m; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 		7CA4488EF1B5C699F1EC00D0 /* ALCalendarDayEventsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendarDayEventsView.m; path = src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m; sourceTree = "<group>"; };
 		7CA4489353065D436115947C /* DefaultStylesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultStylesViewController.m; path = src/toolkit/ALCalendarDayView/DefaultStylesViewController.m; sourceTree = "<group>"; };
 		7CA44898824F100F5ED7A4D0 /* RoomPlaque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomPlaque.m; path = src/eccalendar/views/RoomPlaque.m; sourceTree = "<group>"; };
+		7CA448CFDC951DC375F4F896 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = src/eccalendar/controls/CustomButton.m; sourceTree = "<group>"; };
 		7CA448E12B3E5762EA620FDF /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceUtils.h; path = src/utils/DeviceUtils.h; sourceTree = "<group>"; };
 		7CA448F57AF5BB94CD439BA3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = src/eccalendar/app/AppDelegate.h; sourceTree = "<group>"; };
 		7CA4492C9FF990D50E550D2E /* MAGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAGridView.m; path = src/libs/CalendarUI/MAGridView.m; sourceTree = "<group>"; };
@@ -149,6 +158,7 @@
 		7CA449AB0EEA64E50D9B7E84 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Utils.m"; path = "src/utils/UIColor+Utils.m"; sourceTree = "<group>"; };
 		7CA44A4E26743675B8B29B4E /* AvailabilityPlaque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvailabilityPlaque.m; path = src/eccalendar/views/AvailabilityPlaque.m; sourceTree = "<group>"; };
 		7CA44A597255E591874F395D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = src/toolkit/TestFlight/libTestFlight.a; sourceTree = "<group>"; };
+		7CA44A6431C731F69030C79E /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextField.m; path = src/eccalendar/controls/CustomTextField.m; sourceTree = "<group>"; };
 		7CA44AFCC47A9E82A96DFEEF /* MAWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAWeekView.h; path = src/libs/CalendarUI/MAWeekView.h; sourceTree = "<group>"; };
 		7CA44AFDF317F3DDC298D272 /* TableRowObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableRowObject.m; path = src/table/TableRowObject.m; sourceTree = "<group>"; };
 		7CA44B0DE1FDEF800F0B6469 /* DayViewExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayViewExampleController.m; path = src/libs/CalendarUI/DayViewExampleController.m; sourceTree = "<group>"; };
@@ -161,7 +171,9 @@
 		7CA44C33806448F4A0C2A111 /* BasicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicModel.m; path = src/models/BasicModel.m; sourceTree = "<group>"; };
 		7CA44C54A3156CA9E9116E42 /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicView.m; path = src/views/BasicView.m; sourceTree = "<group>"; };
 		7CA44C87E604722132F2AE0E /* TapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TapDetectingView.h; path = src/libs/CalendarUI/TapDetectingView.h; sourceTree = "<group>"; };
+		7CA44C92C904210CFFDC7B66 /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvailabilityViewController.m; path = src/eccalendar/viewcontrollers/AvailabilityViewController.m; sourceTree = "<group>"; };
 		7CA44CCA2D356F49F2D8DF50 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicViewController.h; path = src/eccalendar/viewcontrollers/BasicViewController.h; sourceTree = "<group>"; };
+		7CA44D6937E76B62365EE90F /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvailabilityViewController.h; path = src/eccalendar/viewcontrollers/AvailabilityViewController.h; sourceTree = "<group>"; };
 		7CA44D8373A8A4A19EDF77E0 /* SVSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVSegmentedControl.h; path = src/libs/SVSegmentedControl/SVSegmentedControl.h; sourceTree = "<group>"; };
 		7CA44D8F8408EA95DDA9C41C /* VeryBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VeryBasicViewController.m; path = src/viewcontrollers/VeryBasicViewController.m; sourceTree = "<group>"; };
 		7CA44D9F87CCD8B9679F1F2F /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Utils.m"; path = "src/utils/UIView+Utils.m"; sourceTree = "<group>"; };
@@ -290,6 +302,14 @@
 				7CA44317D660159EC0A9E7C0 /* SVSegmentedThumb.m */,
 				7CA44469A9A1D5B4711C4F71 /* BasicWhiteView.h */,
 				7CA443BC854C214175D31274 /* BasicWhiteView.m */,
+				7CA44C92C904210CFFDC7B66 /* AvailabilityViewController.m */,
+				7CA44D6937E76B62365EE90F /* AvailabilityViewController.h */,
+				7CA44A6431C731F69030C79E /* CustomTextField.m */,
+				7CA440104A3C847D02B45AA2 /* CustomTextField.h */,
+				7CA448CFDC951DC375F4F896 /* CustomButton.m */,
+				7CA447C87C91D1269324C987 /* CustomButton.h */,
+				7CA44311D808D4113DF2071E /* NSDate+Utils.m */,
+				7CA4460CFA85704EB7A582CA /* NSDate+Utils.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -467,6 +487,10 @@
 				7CA44965AE72D9FE0566680B /* SVSegmentedControl.m in Sources */,
 				7CA44E73AA4234F54249B30B /* SVSegmentedThumb.m in Sources */,
 				7CA4433D9161FCB45A0078F4 /* BasicWhiteView.m in Sources */,
+				7CA44F55B23A7BCA82882B8C /* AvailabilityViewController.m in Sources */,
+				7CA44FE0F563B1F61EB768B7 /* CustomTextField.m in Sources */,
+				7CA44027C7714398DFA1753E /* CustomButton.m in Sources */,
+				7CA44204415A9AF5C2A91DE3 /* NSDate+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

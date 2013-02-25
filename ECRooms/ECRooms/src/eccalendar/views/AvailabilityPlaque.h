@@ -11,7 +11,23 @@
 
 @interface AvailabilityPlaque : PlaqueView {
     IBOutletCollection(UIImageView) NSMutableArray *imageViews;
+    IBOutletCollection(UILabel) NSMutableArray *labels;
+
+    IBOutlet UITextField *eventTextField;
+    IBOutlet UIDatePicker *datePicker;
+    IBOutlet UIView *datePickerView;
+
+    IBOutlet UIButton *startDateButton;
+    IBOutlet UIButton *endDateButton;
+
+
 }
 
+
+@property(nonatomic, strong) UITextField *eventTextField;
+@property(nonatomic, strong) NSMutableArray *labels;
+@property(nonatomic, strong) NSMutableArray *imageViews;
+- (IBAction) showDatePicker: (id) sender;
+- (IBAction) dismissDatePicker: (id) sender;
 
 @end

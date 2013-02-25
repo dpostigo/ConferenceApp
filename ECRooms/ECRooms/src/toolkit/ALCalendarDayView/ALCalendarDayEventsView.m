@@ -12,12 +12,14 @@
 
 @implementation ALCalendarDayEventsView {
     float gutterWidth;
+    UIImageView *indicatorImage;
 }
 
 
 @synthesize timeLabelsColor;
 @synthesize timeLabelsFont;
 @synthesize gutterWidth;
+@synthesize indicatorImage;
 
 static NSArray *timeStrings;
 static NSArray *hoursStrings;
@@ -38,8 +40,8 @@ static NSArray *hoursStrings;
 - (id) initWithFrame: (CGRect) frame {
     self = [super initWithFrame: frame];
     if (self) {
-        self.leftMargin = 50.0f;
-        self.rightMargin = 10.0f;
+        self.leftMargin = 95.0f;
+        self.rightMargin = 15.0f;
         self.topMargin = 10.0f;
 
         self.gutterWidth = 8.0;
@@ -47,6 +49,11 @@ static NSArray *hoursStrings;
         self.timeLabelsColor = [UIColor blackColor];
 
         self.timeLabelsFont = [UIFont systemFontOfSize: 15.0];
+        
+        
+        indicatorImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"time-indicator.png"]];
+        [self addSubview: indicatorImage];
+
     }
     return self;
 }
@@ -136,6 +143,10 @@ static NSArray *hoursStrings;
             [self packEvents: columns width: width];
         }
     }
+
+    indicatorImage.top =  self.topMargin + [self yValueForTime: [self hourFromDate: [NSDate date]]];
+
+    indicatorImage.centerX = self.width/2;
 }
 
 
