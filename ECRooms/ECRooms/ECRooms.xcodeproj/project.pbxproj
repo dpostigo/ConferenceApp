@@ -20,6 +20,8 @@
 		0346ACD5166EB0E000A00BC4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0346ACD4166EB0E000A00BC4 /* Default@2x.png */; };
 		0346ACD7166EB0E000A00BC4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0346ACD6166EB0E000A00BC4 /* Default-568h@2x.png */; };
 		0347B41916DC247500020C7D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0347B41816DC247500020C7D /* SVProgressHUD.bundle */; };
+		0347B41B16DC2AC300020C7D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0347B41A16DC2AC300020C7D /* Icon.png */; };
+		0347B41D16DC2AC500020C7D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0347B41C16DC2AC500020C7D /* Icon@2x.png */; };
 		0348A7E31679497B00BDC6A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0348A7E21679497B00BDC6A3 /* QuartzCore.framework */; };
 		0348A7F916794AA700BDC6A3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0348A7F816794AA700BDC6A3 /* libz.dylib */; };
 		036AAB8C16D82DF40047787D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036AAB8B16D82DF40047787D /* EventKit.framework */; };
@@ -94,6 +96,8 @@
 		0346ACD4166EB0E000A00BC4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0346ACD6166EB0E000A00BC4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0347B41816DC247500020C7D /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = src/libs/SVProgressHUD/SVProgressHUD.bundle; sourceTree = SOURCE_ROOT; };
+		0347B41A16DC2AC300020C7D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0347B41C16DC2AC500020C7D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		0348A7E21679497B00BDC6A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0348A7F816794AA700BDC6A3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		036AAB8B16D82DF40047787D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
@@ -223,6 +227,8 @@
 		0346ACB1166EB0DF00A00BC4 = {
 			isa = PBXGroup;
 			children = (
+				0347B41C16DC2AC500020C7D /* Icon@2x.png */,
+				0347B41A16DC2AC300020C7D /* Icon.png */,
 				033C39E9167C139A004EC2F1 /* Plaque1.xib */,
 				0346ACC6166EB0E000A00BC4 /* BasicProject */,
 				03150127166EB4960025F1F7 /* src */,
@@ -444,6 +450,8 @@
 				033C39EA167C139A004EC2F1 /* Plaque1.xib in Resources */,
 				7CA44CE5F2A4291B0BE9EC50 /* Plaque2.xib in Resources */,
 				0347B41916DC247500020C7D /* SVProgressHUD.bundle in Resources */,
+				0347B41B16DC2AC300020C7D /* Icon.png in Resources */,
+				0347B41D16DC2AC500020C7D /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
