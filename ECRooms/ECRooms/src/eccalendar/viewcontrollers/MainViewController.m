@@ -43,26 +43,6 @@
 
     availablePlaque = [[[NSBundle mainBundle] loadNibNamed: @"Plaque2" owner: self options: nil] objectAtIndex: 0];
     [availabilityContainer addSubview: availablePlaque];
-
-    NSArray *array = [NSArray arrayWithObjects: CLOUD_IDENTIFIER, INTERACTIVE_IDENTIFIER, CONFERENCE_IDENTIFIER, nil];
-
-    for (UILabel *label in availablePlaque.labels) {
-
-        NSInteger index = [availablePlaque.labels indexOfObject: label];
-        NSString *identifier = [array objectAtIndex: index];
-        RoomType roomType = [_model roomTypeForIdentifier: identifier];
-        label.text = [_model slugForRoomType: roomType];
-
-        BOOL isAvailable = [_model availabilityForRoomType: roomType];
-        UIImageView *imageView = [availablePlaque.imageViews objectAtIndex: index];
-
-        if (isAvailable) {
-            imageView.image = [UIImage imageNamed: @"available-control.png"];
-        } else {
-
-            imageView.image = [UIImage imageNamed: @"in-use-control.png"];
-        }
-    }
 }
 
 
@@ -107,6 +87,7 @@
 
 - (IBAction) handleReserveButton: (id) sender {
 
+    [availablePlaque.eventTextField resignFirstResponder];
     [_queue addOperation: [[SaveEventOperation alloc] init]];
 }
 
@@ -139,26 +120,42 @@
             [availablePlaque flip];
         }
     }
+
+    NSArray *array = [NSArray arrayWithObjects: CLOUD_IDENTIFIER, INTERACTIVE_IDENTIFIER, CONFERENCE_IDENTIFIER, nil];
+    for (UILabel *label in availablePlaque.labels) {
+
+        NSInteger index = [availablePlaque.labels indexOfObject: label];
+        NSString *identifier = [array objectAtIndex: index];
+        RoomType roomType = [_model roomTypeForIdentifier: identifier];
+        label.text = [_model slugForRoomType: roomType];
+
+        BOOL isAvailable = [_model availabilityForRoomType: roomType];
+        UIImageView *imageView = [availablePlaque.imageViews objectAtIndex: index];
+
+        if (isAvailable) {
+            imageView.image = [UIImage imageNamed: @"available-control.png"];
+        } else {
+
+            imageView.image = [UIImage imageNamed: @"in-use-control.png"];
+        }
+    }
 }
 
 
 - (void) eventFailedWithMessage: (NSString *) message {
 
-[SVProgressHUD showErrorWithStatus: message];
+    [SVProgressHUD showErrorWithStatus: message];
 
-//
-//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Could Not Create Event" message: message delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
-//    [alertView show];
+    //
+    //    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Could Not Create Event" message: message delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
+    //    [alertView show];
 }
 
 
 - (void) eventSucceeded {
 
-    [SVProgressHUD showSuccessWithStatus: @"Success!"];
-
-    //    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Could Not Create Event" message: message delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
-    //    [alertView show];
-
+    [SVProgressHUD showSuccessWithStatus: @"Success!" duration: 2.0];
+    [availablePlaque reset];
 }
 
 

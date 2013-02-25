@@ -31,6 +31,9 @@
 
         if (error) {
             [_model notifyDelegates: @selector(eventFailedWithMessage:) object: error.localizedDescription];
+        } else {
+
+            [_model notifyDelegates: @selector(eventSucceeded) object: nil];
         }
     }
 }

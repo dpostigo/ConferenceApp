@@ -41,6 +41,14 @@
 }
 
 
+- (void) reset {
+    eventTextField.text = @"";
+    startDateButton.titleLabel.text = @"11:00 AM";
+    endDateButton.titleLabel.text = @"12:00 AM";
+
+
+}
+
 - (IBAction) handleReserveButton: (id) sender {
 }
 

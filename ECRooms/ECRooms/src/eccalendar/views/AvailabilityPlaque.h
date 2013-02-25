@@ -29,6 +29,7 @@
 @property(nonatomic, strong) NSMutableArray *labels;
 @property(nonatomic, strong) NSMutableArray *imageViews;
 @property(nonatomic, strong) UIButton *reserveButton;
+- (void) reset;
 - (IBAction) showDatePicker: (id) sender;
 - (IBAction) dismissDatePicker: (id) sender;
 

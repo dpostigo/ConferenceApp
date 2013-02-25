@@ -300,7 +300,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA</b
 						<bool key="IBUIReversesTitleShadowWhenHighlighted">YES</bool>
 						<bool key="IBUIAdjustsImageWhenHighlighted">NO</bool>
 						<reference key="IBUITintColor" ref="805923522"/>
-						<string key="IBUINormalTitle">11:00 AM</string>
+						<string key="IBUINormalTitle">12:00 AM</string>
 						<reference key="IBUIHighlightedTitleColor" ref="961994121"/>
 						<reference key="IBUINormalTitleColor" ref="337758715"/>
 						<reference key="IBUINormalTitleShadowColor" ref="122551653"/>
