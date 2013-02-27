@@ -52,6 +52,7 @@
 		7CA447DD1C45AD0BFC92F000 /* AvailabilityPlaque.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44A4E26743675B8B29B4E /* AvailabilityPlaque.m */; };
 		7CA4482FDE62A01D41B9E656 /* VeryBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44D8F8408EA95DDA9C41C /* VeryBasicViewController.m */; };
 		7CA44843D2CDF6571BD5B7F5 /* BasicTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4423AB3AC530BCD617B38 /* BasicTableCell.m */; };
+		7CA44871B6BA94D3ED1C53CE /* JMSimpleDateConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA444F40C8CF5058B7FBD64 /* JMSimpleDateConstants.m */; };
 		7CA44878F5C9EBC10F02666E /* MAGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4492C9FF990D50E550D2E /* MAGridView.m */; };
 		7CA4488D9051B9EA512539D6 /* MainStoryboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA44F562EC6427AC3BC4BBF /* MainStoryboard-iPad.storyboard */; };
 		7CA4491218672999B5F1D6D3 /* RoomPlaque.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44898824F100F5ED7A4D0 /* RoomPlaque.m */; };
@@ -66,6 +67,9 @@
 		7CA44B6194499892F1D900EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA443D8379D101643027A11 /* AppDelegate.m */; };
 		7CA44C5677708677E5C13BC6 /* DefaultStylesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4489353065D436115947C /* DefaultStylesViewController.m */; };
 		7CA44CE5F2A4291B0BE9EC50 /* Plaque2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA446DEABC55BDE301858C0 /* Plaque2.xib */; };
+		7CA44CEE453D1FF2CC283CA2 /* JMSimpleDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4450B12F64810B17EB0B8 /* JMSimpleDate.m */; };
+		7CA44D60207078932C0CE708 /* NSDate+JMSimpleDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA4447E470A76C5D05B80EC /* NSDate+JMSimpleDate.m */; };
+		7CA44D8DAA7E27EB5A9AF739 /* NSDateFormatter+JMSimpleDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44288B655574810B1586B /* NSDateFormatter+JMSimpleDate.m */; };
 		7CA44DA1B68F13CA93BE42CF /* MAEventKitDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44713E7F7C2997E70165D /* MAEventKitDataSource.m */; };
 		7CA44DDF8C70E81571E91617 /* MAWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA441DDAD0ED61380C7C3DF /* MAWeekView.m */; };
 		7CA44E1961E49C8E043CA613 /* BasicOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA44F4C3BAB96C5940B8B7A /* BasicOperation.m */; };
@@ -118,8 +122,10 @@
 		7CA4423AB3AC530BCD617B38 /* BasicTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicTableCell.m; path = src/table/BasicTableCell.m; sourceTree = "<group>"; };
 		7CA44244A7F0D9CBED064F5E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = src/libs/SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		7CA4425CAF6E7163D701431B /* ALCalendarDayEventsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarDayEventsView.h; path = src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.h; sourceTree = "<group>"; };
+		7CA44278E3AF1DF4A21F04D4 /* JMSimpleDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMSimpleDate.h; path = src/libs/JMSimpleDate/JMSimpleDate.h; sourceTree = "<group>"; };
 		7CA4427AF5ED6B5EA766F969 /* ALCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarEvent.h; path = src/toolkit/ALCalendarDayView/ALCalendarEvent.h; sourceTree = "<group>"; };
 		7CA442855C5395A5923EE458 /* BasicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicModel.h; path = src/models/BasicModel.h; sourceTree = "<group>"; };
+		7CA44288B655574810B1586B /* NSDateFormatter+JMSimpleDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+JMSimpleDate.m"; path = "src/libs/JMSimpleDate/NSDateFormatter+JMSimpleDate.m"; sourceTree = "<group>"; };
 		7CA442CD1F26628748308CA4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = src/eccalendar/viewcontrollers/MainViewController.h; sourceTree = "<group>"; };
 		7CA442D28806375D0ADAFD62 /* ALCalendarTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarTileView.h; path = src/toolkit/ALCalendarDayView/ALCalendarTileView.h; sourceTree = "<group>"; };
 		7CA44311D808D4113DF2071E /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Utils.m"; path = "src/utils/NSDate+Utils.m"; sourceTree = "<group>"; };
@@ -131,11 +137,14 @@
 		7CA443D8379D101643027A11 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = src/eccalendar/app/AppDelegate.m; sourceTree = "<group>"; };
 		7CA444402C3EB372C9666627 /* UILabel+ECCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+ECCalendar.h"; path = "src/eccalendar/utils/UILabel+ECCalendar.h"; sourceTree = "<group>"; };
 		7CA44469A9A1D5B4711C4F71 /* BasicWhiteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicWhiteView.h; path = src/views/BasicWhiteView.h; sourceTree = "<group>"; };
+		7CA4447E470A76C5D05B80EC /* NSDate+JMSimpleDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+JMSimpleDate.m"; path = "src/libs/JMSimpleDate/NSDate+JMSimpleDate.m"; sourceTree = "<group>"; };
 		7CA44484B988A212F810F07F /* VeryBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VeryBasicViewController.h; path = src/viewcontrollers/VeryBasicViewController.h; sourceTree = "<group>"; };
 		7CA4448D310466D9B42CAA5A /* TapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TapDetectingView.m; path = src/libs/CalendarUI/TapDetectingView.m; sourceTree = "<group>"; };
 		7CA444C8985199499722C9DF /* DayViewExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DayViewExampleController.h; path = src/libs/CalendarUI/DayViewExampleController.h; sourceTree = "<group>"; };
 		7CA444E18B9F6B5594FC21AA /* ALCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALCalendarDayView.h; path = src/toolkit/ALCalendarDayView/ALCalendarDayView.h; sourceTree = "<group>"; };
+		7CA444F40C8CF5058B7FBD64 /* JMSimpleDateConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMSimpleDateConstants.m; path = src/libs/JMSimpleDate/JMSimpleDateConstants.m; sourceTree = "<group>"; };
 		7CA444FF41836A7D7A81A87D /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Utils.h"; path = "src/utils/UIView+Utils.h"; sourceTree = "<group>"; };
+		7CA4450B12F64810B17EB0B8 /* JMSimpleDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMSimpleDate.m; path = src/libs/JMSimpleDate/JMSimpleDate.m; sourceTree = "<group>"; };
 		7CA4451BE77DB50E9C80B290 /* SVSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVSegmentedControl.m; path = src/libs/SVSegmentedControl/SVSegmentedControl.m; sourceTree = "<group>"; };
 		7CA44574F3E7C37DD3CC6031 /* ALCalendarTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALCalendarTileView.m; path = src/toolkit/ALCalendarDayView/ALCalendarTileView.m; sourceTree = "<group>"; };
 		7CA44579C067F481C75BDF57 /* MADayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADayView.h; path = src/libs/CalendarUI/MADayView.h; sourceTree = "<group>"; };
@@ -167,6 +176,7 @@
 		7CA448CFDC951DC375F4F896 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = src/eccalendar/controls/CustomButton.m; sourceTree = "<group>"; };
 		7CA448E12B3E5762EA620FDF /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceUtils.h; path = src/utils/DeviceUtils.h; sourceTree = "<group>"; };
 		7CA448F57AF5BB94CD439BA3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = src/eccalendar/app/AppDelegate.h; sourceTree = "<group>"; };
+		7CA44909F5261A2E583F1F85 /* NSDate+JMSimpleDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+JMSimpleDate.h"; path = "src/libs/JMSimpleDate/NSDate+JMSimpleDate.h"; sourceTree = "<group>"; };
 		7CA4492C9FF990D50E550D2E /* MAGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAGridView.m; path = src/libs/CalendarUI/MAGridView.m; sourceTree = "<group>"; };
 		7CA4492F614CCE474E2CC17B /* CustomTileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTileViewController.m; path = src/toolkit/ALCalendarDayView/CustomTileViewController.m; sourceTree = "<group>"; };
 		7CA4493BD6ACF6FEA66A39F9 /* CBLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBLayer.m; path = src/toolkit/CBButtons/CBLayer.m; sourceTree = "<group>"; };
@@ -181,6 +191,7 @@
 		7CA44B0DE1FDEF800F0B6469 /* DayViewExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayViewExampleController.m; path = src/libs/CalendarUI/DayViewExampleController.m; sourceTree = "<group>"; };
 		7CA44B17B9CDDA20BAE56B5D /* TextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextField.m; path = src/controls/TextField.m; sourceTree = "<group>"; };
 		7CA44B501D479713F584EC92 /* MAGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAGridView.h; path = src/libs/CalendarUI/MAGridView.h; sourceTree = "<group>"; };
+		7CA44B8CB405711852E872CE /* JMSimpleDateConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMSimpleDateConstants.h; path = src/libs/JMSimpleDate/JMSimpleDateConstants.h; sourceTree = "<group>"; };
 		7CA44BA33B63A9E57E509D2C /* TableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableSection.m; path = src/table/TableSection.m; sourceTree = "<group>"; };
 		7CA44BAF34FA3C56DF582E2D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = src/eccalendar/viewcontrollers/MainViewController.m; sourceTree = "<group>"; };
 		7CA44BC0B782ECC2665809C6 /* BasicTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicTableCell.h; path = src/table/BasicTableCell.h; sourceTree = "<group>"; };
@@ -191,6 +202,7 @@
 		7CA44C87E604722132F2AE0E /* TapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TapDetectingView.h; path = src/libs/CalendarUI/TapDetectingView.h; sourceTree = "<group>"; };
 		7CA44C92C904210CFFDC7B66 /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvailabilityViewController.m; path = src/eccalendar/viewcontrollers/AvailabilityViewController.m; sourceTree = "<group>"; };
 		7CA44CCA2D356F49F2D8DF50 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicViewController.h; path = src/eccalendar/viewcontrollers/BasicViewController.h; sourceTree = "<group>"; };
+		7CA44D63BC3F6A074A00709B /* NSDateFormatter+JMSimpleDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+JMSimpleDate.h"; path = "src/libs/JMSimpleDate/NSDateFormatter+JMSimpleDate.h"; sourceTree = "<group>"; };
 		7CA44D6937E76B62365EE90F /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvailabilityViewController.h; path = src/eccalendar/viewcontrollers/AvailabilityViewController.h; sourceTree = "<group>"; };
 		7CA44D8373A8A4A19EDF77E0 /* SVSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVSegmentedControl.h; path = src/libs/SVSegmentedControl/SVSegmentedControl.h; sourceTree = "<group>"; };
 		7CA44D8F8408EA95DDA9C41C /* VeryBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VeryBasicViewController.m; path = src/viewcontrollers/VeryBasicViewController.m; sourceTree = "<group>"; };
@@ -338,6 +350,14 @@
 				7CA440F6BE6CFC1323815812 /* NSString+Utils.m */,
 				7CA446C69360CA553112A0A0 /* SVProgressHUD.h */,
 				7CA44244A7F0D9CBED064F5E /* SVProgressHUD.m */,
+				7CA44278E3AF1DF4A21F04D4 /* JMSimpleDate.h */,
+				7CA4450B12F64810B17EB0B8 /* JMSimpleDate.m */,
+				7CA44B8CB405711852E872CE /* JMSimpleDateConstants.h */,
+				7CA444F40C8CF5058B7FBD64 /* JMSimpleDateConstants.m */,
+				7CA44909F5261A2E583F1F85 /* NSDate+JMSimpleDate.h */,
+				7CA4447E470A76C5D05B80EC /* NSDate+JMSimpleDate.m */,
+				7CA44D63BC3F6A074A00709B /* NSDateFormatter+JMSimpleDate.h */,
+				7CA44288B655574810B1586B /* NSDateFormatter+JMSimpleDate.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -527,6 +547,10 @@
 				7CA446A26CD095DBE8E4168D /* TextField.m in Sources */,
 				7CA446DC944C3CED4629163A /* NSString+Utils.m in Sources */,
 				7CA44031E16230FA496DEE9C /* SVProgressHUD.m in Sources */,
+				7CA44CEE453D1FF2CC283CA2 /* JMSimpleDate.m in Sources */,
+				7CA44871B6BA94D3ED1C53CE /* JMSimpleDateConstants.m in Sources */,
+				7CA44D60207078932C0CE708 /* NSDate+JMSimpleDate.m in Sources */,
+				7CA44D8DAA7E27EB5A9AF739 /* NSDateFormatter+JMSimpleDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

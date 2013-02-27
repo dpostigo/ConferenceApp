@@ -37,7 +37,8 @@
             [_model notifyDelegates: @selector(calendarsNotFound) object: nil];
         }
         NSCalendar *calendar = [NSCalendar currentCalendar];
-        calendar.timeZone = [NSTimeZone timeZoneWithName: @"PST"];
+//        calendar.timeZone = [NSTimeZone timeZoneWithName: @"PST"];
+
 
         NSDateComponents *currentDayComponents = [calendar components: (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit) fromDate: [NSDate date]];
         // Create the start date components
@@ -52,8 +53,6 @@
 
         NSDate *startOfDay = [calendar dateFromComponents: startOfDayComponents];
 
-        NSLog(@"startOfDay = %@", startOfDay);
-
         // Create the end date components
         NSDateComponents *endOfDayComponents = [[NSDateComponents alloc] init];
         endOfDayComponents.hour = startOfDayComponents.hour;
@@ -64,8 +63,6 @@
         endOfDayComponents.month = startOfDayComponents.month;
 
         NSDate *endOfDay = [calendar dateFromComponents: endOfDayComponents];
-        NSLog(@"endOfDay = %@", endOfDay);
-
         NSPredicate *predicate = [store predicateForEventsWithStartDate: startOfDay endDate: endOfDay calendars: _model.calendars];
         NSArray *events = [store eventsMatchingPredicate: predicate];
 

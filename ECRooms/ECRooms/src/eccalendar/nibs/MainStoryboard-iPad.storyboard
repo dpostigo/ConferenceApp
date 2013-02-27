@@ -12,13 +12,13 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="mockup2.png" id="pcv-ZA-Eu0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="background-texture-ipad.png" id="pcv-ZA-Eu0">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="OeR-A5-Sty">
                                 <rect key="frame" x="308" y="51" width="421" height="246"/>
                                 <subviews>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="room_plaque_wide.png" id="vQv-5D-jzA">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="vQv-5D-jzA">
                                         <rect key="frame" x="0.0" y="0.0" width="421" height="246"/>
                                     </imageView>
                                 </subviews>
@@ -27,7 +27,7 @@
                             <view contentMode="scaleToFill" id="pud-Bw-JZT">
                                 <rect key="frame" x="40" y="51" width="271" height="246"/>
                                 <subviews>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="room_plaque.png" id="tLl-7G-7zQ">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="tLl-7G-7zQ">
                                         <rect key="frame" x="0.0" y="0.0" width="271" height="246"/>
                                     </imageView>
                                 </subviews>
@@ -50,6 +50,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
                         <outlet property="availabilityContainer" destination="OeR-A5-Sty" id="idS-Xd-Eqk"/>
+                        <outlet property="backgroundView" destination="pcv-ZA-Eu0" id="I3q-MN-UrW"/>
                         <outlet property="calendarContainer" destination="V2u-IP-jyE" id="Ad8-j7-Kim"/>
                         <outlet property="roomPlaqueContainer" destination="pud-Bw-JZT" id="eBp-xb-PVl"/>
                     </connections>
@@ -197,11 +198,10 @@
     </scenes>
     <resources>
         <image name="available-control.png" width="166" height="35"/>
+        <image name="background-texture-ipad.png" width="768" height="1024"/>
         <image name="in-use-control.png" width="166" height="35"/>
-        <image name="mockup2.png" width="1536" height="2048"/>
         <image name="reserve-card.png" width="395" height="250"/>
-        <image name="room_plaque.png" width="271" height="246"/>
-        <image name="room_plaque_wide.png" width="421" height="246"/>
+        <image name="room_plaque_wide.png" width="841" height="491"/>
     </resources>
     <classes>
         <class className="ALCalendarDayView" superclassName="UIView">
@@ -211,13 +211,16 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AvailabilityPlaque.h"/>
             <relationships>
                 <relationship kind="action" name="dismissDatePicker:"/>
+                <relationship kind="action" name="handleReserveButton:"/>
                 <relationship kind="action" name="showDatePicker:"/>
                 <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
                 <relationship kind="outlet" name="datePickerView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="endDateButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="eventTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="reserveButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="startDateButton" candidateClass="UIButton"/>
                 <relationship kind="outletCollection" name="imageViews" candidateClass="UIImageView"/>
+                <relationship kind="outletCollection" name="labels" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="AvailabilityViewController" superclassName="BasicViewController">
@@ -236,7 +239,7 @@
         <class className="MainViewController" superclassName="BasicTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
-                <relationship kind="action" name="settingsClicked:"/>
+                <relationship kind="action" name="handleReserveButton:"/>
                 <relationship kind="outlet" name="availabilityContainer" candidateClass="UIView"/>
                 <relationship kind="outlet" name="calendar" candidateClass="ALCalendarDayView"/>
                 <relationship kind="outlet" name="calendarContainer" candidateClass="UIView"/>
@@ -261,6 +264,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VeryBasicViewController.h"/>
             <relationships>
                 <relationship kind="action" name="dismissModal"/>
+                <relationship kind="outlet" name="debugLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

@@ -33,6 +33,7 @@
 
 + (Model *) sharedModel;
 - (BOOL) isCaliforniaTime;
+- (NSDate *) nextAvailableStartTime;
 - (BOOL) availabilityForRoomType: (RoomType) aRoomType;
 - (EKCalendar *) currentCalendar;
 - (NSString *) currentRoomStringIdentifier;

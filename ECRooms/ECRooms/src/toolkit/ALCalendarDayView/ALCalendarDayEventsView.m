@@ -50,8 +50,8 @@ static NSArray *hoursStrings;
         self.timeLabelsColor = [UIColor blackColor];
 
         self.timeLabelsFont = [UIFont systemFontOfSize: 15.0];
-        
-        
+
+
         indicatorImage = [[UIImageView alloc] initWithImage: [UIImage imageNamed: @"time-indicator.png"]];
         [self addSubview: indicatorImage];
 

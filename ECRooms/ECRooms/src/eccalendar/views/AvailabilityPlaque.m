@@ -9,6 +9,7 @@
 #import <EventKit/EventKit.h>
 #import "AvailabilityPlaque.h"
 #import "Model.h"
+#import "NSDate+JMSimpleDate.h"
 
 
 @implementation AvailabilityPlaque {
@@ -42,12 +43,25 @@
 
 
 - (void) reset {
+
+    NSLog(@"%s", __PRETTY_FUNCTION__);
     eventTextField.text = @"";
     startDateButton.titleLabel.text = @"11:00 AM";
     endDateButton.titleLabel.text = @"12:00 AM";
 
+    NSDate *date = [Model sharedModel].nextAvailableStartTime;
+    NSLog(@"date = %@", date);
 
+    if (date != nil) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.dateFormat = @"h:mm a";
+
+        startDateButton.titleLabel.text = [formatter stringFromDate: date];
+        date = [date dateByAddingHours: 1];
+        endDateButton.titleLabel.text = [formatter stringFromDate: date];
+    }
 }
+
 
 - (IBAction) handleReserveButton: (id) sender {
 }

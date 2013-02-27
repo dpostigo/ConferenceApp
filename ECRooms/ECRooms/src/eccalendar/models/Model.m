@@ -8,6 +8,8 @@
 #import <EventKit/EventKit.h>
 #import "Model.h"
 #import "NSDate+Utils.h"
+#import "NSDate+JMSimpleDate.h"
+#import "NSDateFormatter+JMSimpleDate.h"
 
 
 @implementation Model {
@@ -58,17 +60,55 @@
 
 
 - (BOOL) isCaliforniaTime {
-    return [NSTimeZone systemTimeZone] == [NSTimeZone timeZoneWithName: @"EST"];
+    return [NSTimeZone systemTimeZone] == [NSTimeZone timeZoneWithName: @"PST"];
+}
+
+
+- (NSDate *) nextAvailableStartTime {
+
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+
+    NSDate *date = [self.currentDate dateByAddingMinutes: 60 - self.currentDate.minute];
+    NSArray *events = [self eventsForRoom: self.currentRoomType];
+
+    if ([events count] == 1) {
+        EKEvent *event = [events objectAtIndex: 0];
+        if (!event.startDate.hasPassed) {
+            NSInteger offset = [event.startDate hoursAfterDate: date];
+            if (offset >= 1) {
+                return date;
+            }
+        }
+    }
+
+    EKEvent *event = [events lastObject];
+    if ([event.endDate isEarlierThanDate: date]) {
+        return date;
+    }
+
+    EKEvent *potentialEvent;
+
+    for (EKEvent *event in events) {
+        if (!event.startDate.hasPassed) {
+            if (potentialEvent) {
+                NSInteger hourGap = [event.endDate hoursAfterDate: potentialEvent.endDate];
+                if (hourGap >= 1) {
+                    return potentialEvent.endDate;
+                }
+            }
+
+            potentialEvent = event;
+        }
+    }
+
+    return nil;
 }
 
 
 - (BOOL) availabilityForRoomType: (RoomType) roomType {
-
     NSDate *date = [NSDate date];
     NSArray *events = [self eventsForRoom: roomType];
-
     for (EKEvent *event in events) {
-
         if ([date isBetweenDate: event.startDate andDate: event.endDate]) {
             return NO;
         }

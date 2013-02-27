@@ -15,7 +15,7 @@
 - (BOOL) application: (UIApplication *) application didFinishLaunchingWithOptions: (NSDictionary *) launchOptions {
 
 #ifdef TESTFLIGHT_ENABLED
-    [TestFlight takeOff: TESTFLIGHT_TOKEN];
+//    [TestFlight takeOff: TESTFLIGHT_TOKEN];
 #endif
     return YES;
 }

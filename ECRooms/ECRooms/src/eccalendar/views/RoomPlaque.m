@@ -45,6 +45,26 @@
 }
 
 
+- (IBAction) flip {
+    [super flip];
+
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+    BOOL isAvailable = [[Model sharedModel] availabilityForRoomType: [Model sharedModel].currentRoomType];
+
+    if (isAvailable && sliderHider.left != 132) {
+        [UIView animateWithDuration: 0.5 delay: 2.0 options: UIViewAnimationOptionCurveEaseOut animations: ^{
+
+            sliderHider.left = 132;
+        }                completion: nil];
+    }
+
+    else if (!isAvailable && sliderHider.left != 13) {
+        [UIView animateWithDuration: 0.5 delay: 2.0 options: UIViewAnimationOptionCurveEaseOut animations: ^{
+            sliderHider.left = 13;
+        }                completion: nil];
+    }
+}
+
 
 #pragma mark UIPickerViewDelegate
 

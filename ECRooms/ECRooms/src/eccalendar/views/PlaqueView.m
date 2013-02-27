@@ -34,9 +34,6 @@
 
 
 - (IBAction) flip {
-
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-
     if ([front superview]) {
         [self flipToBack];
     } else {

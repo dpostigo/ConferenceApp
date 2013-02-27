@@ -14,6 +14,7 @@
     IBOutlet UIPickerView *picker;
     IBOutlet CustomLabel *titleLabel;
     IBOutlet UITableView *table;
+    IBOutlet UIImageView *sliderHider;
 }
 
 

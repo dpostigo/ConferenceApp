@@ -4,6 +4,7 @@
 #import "ALCalendarEvent.h"
 #import "ALCalendarTileView.h"
 #import "Model.h"
+#import "NSDate+Utils.h"
 
 
 @interface CustomTileView : ALCalendarTileView
@@ -113,6 +114,8 @@
         ALCalendarEvent *displayEvent = [[ALCalendarEvent alloc] init];
         displayEvent.start = event.startDate;
         displayEvent.end = event.endDate;
+
+
         displayEvent.title = [NSString stringWithFormat: @"%@ %@", [event.title uppercaseString], event.organizer.name];
         displayEvent.description = event.organizer.name;
         displayEvent.location = event.location;

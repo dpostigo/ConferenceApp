@@ -43,6 +43,9 @@
 
     availablePlaque = [[[NSBundle mainBundle] loadNibNamed: @"Plaque2" owner: self options: nil] objectAtIndex: 0];
     [availabilityContainer addSubview: availablePlaque];
+
+    [self fetchUpdatedInformation];
+
 }
 
 
@@ -68,18 +71,17 @@
 
     calendarView.scrollView.contentOffset = CGPointMake(0, calendarView.eventsView.height - calendarView.scrollView.height);
 
-    [_queue addOperation: [[GetDataOperation alloc] init]];
 
     roomPlaque.titleLabel.text = [[_model slugForRoomType: _model.currentRoomType] uppercaseString];
     [availablePlaque.reserveButton addTarget: self action: @selector(handleReserveButton:) forControlEvents: UIControlEventTouchUpInside];
 
     [self subscribeTextField: availablePlaque.eventTextField];
-    [self performSelector: @selector(fetchUpdatedInformation) withObject: nil afterDelay: 60.0];
+    [self performSelector: @selector(fetchUpdatedInformation) withObject: nil afterDelay: 5.0];
 }
 
 
 - (void) fetchUpdatedInformation {
-
+    NSLog(@"%s", __PRETTY_FUNCTION__);
     _model.currentDate = [[[NSDate date] toGlobalTime] toPST];
     [_queue addOperation: [[GetDataOperation alloc] init]];
 }
@@ -107,6 +109,7 @@
 
 - (void) currentRoomTypeDidChange {
 
+    [availablePlaque reset];
     BOOL isAvailable = [_model availabilityForRoomType: _model.currentRoomType];
 
     if (isAvailable) {
