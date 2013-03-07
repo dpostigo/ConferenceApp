@@ -43,8 +43,6 @@
 
 
 - (void) reset {
-
-    NSLog(@"%s", __PRETTY_FUNCTION__);
     eventTextField.text = @"";
     startDateButton.titleLabel.text = @"11:00 AM";
     endDateButton.titleLabel.text = @"12:00 AM";

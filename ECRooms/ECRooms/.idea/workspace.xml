@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d61a76-4226-4c98-87cf-a9ce163eb425" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ECRooms.xcodeproj/project.xcworkspace/xcuserdata/dpostigo.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ECRooms.xcodeproj/project.xcworkspace/xcuserdata/dpostigo.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/_backgrounds/background-texture-ipad.png" afterPath="$PROJECT_DIR$/assets/_backgrounds/background-texture-ipad.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/_backgrounds/background-texture-ipad@2x.png" afterPath="$PROJECT_DIR$/assets/_backgrounds/background-texture-ipad@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/_ui/room_plaque.png" afterPath="$PROJECT_DIR$/assets/_ui/room_plaque.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/_ui/room_plaque@2x.png" afterPath="$PROJECT_DIR$/assets/_ui/room_plaque@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/_ui/room_plaque_wide.png" afterPath="$PROJECT_DIR$/assets/_ui/room_plaque_wide.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/_ui/room_plaque_wide@2x.png" afterPath="$PROJECT_DIR$/assets/_ui/room_plaque_wide@2x.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ECRooms.xcodeproj/xcuserdata/dpostigo.xcuserdatad/xcschemes/ECRooms.xcscheme" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BasicProject/ECRooms-Info.plist" afterPath="$PROJECT_DIR$/BasicProject/ConferenceApp-Info.plist" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BasicProject/ECRooms-Prefix.pch" afterPath="$PROJECT_DIR$/BasicProject/ConferenceApp-Prefix.pch" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ECRooms.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ConferenceApp.xcodeproj/project.pbxproj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ECRooms.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/ConferenceApp.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ECRooms.xcodeproj/project.xcworkspace/xcuserdata/dpostigo.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ConferenceApp.xcodeproj/project.xcworkspace/xcuserdata/dpostigo.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ECRooms.xcodeproj/project.xcworkspace/xcuserdata/dpostigo.xcuserdatad/WorkspaceSettings.xcsettings" afterPath="$PROJECT_DIR$/ConferenceApp.xcodeproj/project.xcworkspace/xcuserdata/dpostigo.xcuserdatad/WorkspaceSettings.xcsettings" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ECRooms.xcodeproj/xcuserdata/dpostigo.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/ConferenceApp.xcodeproj/xcuserdata/dpostigo.xcuserdatad/xcschemes/xcschememanagement.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Reference Apps/calendar-ui" afterPath="$PROJECT_DIR$/../../Reference Apps/calendar-ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ECRooms.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ECRooms.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/app/AppDelegate.m" afterPath="$PROJECT_DIR$/src/eccalendar/app/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/models/Model.h" afterPath="$PROJECT_DIR$/src/eccalendar/models/Model.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xcode.xml" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/models/Model.m" afterPath="$PROJECT_DIR$/src/eccalendar/models/Model.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/nibs/MainStoryboard-iPad.storyboard" afterPath="$PROJECT_DIR$/src/eccalendar/nibs/MainStoryboard-iPad.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m" afterPath="$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m" afterPath="$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m" afterPath="$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.h" afterPath="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m" afterPath="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h" afterPath="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m" afterPath="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m" afterPath="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m" afterPath="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xibs/Plaque1.xib" afterPath="$PROJECT_DIR$/src/xibs/Plaque1.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xibs/Plaque2.xib" afterPath="$PROJECT_DIR$/src/xibs/Plaque2.xib" />
     </list>
     <ignored path="BasicProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,22 +40,32 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_IPAD_DMQJDT5EF182" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.h">
+      <file leaf-file-name="RoomPlaque.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="46" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+            <state line="20" column="41" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainViewController.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ALCalendarDayEventsView.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="106" column="9" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainViewController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="47" selection-start="3323" selection-end="3323" vertical-scroll-proportion="0.0">
+            <state line="112" column="16" selection-start="3518" selection-end="3518" vertical-scroll-proportion="0.19866072">
               <folding>
                 <element signature="n#loadView#0;n#MainViewController#0" expanded="true" />
                 <element signature="n#viewDidLoad#0;n#MainViewController#0" expanded="true" />
+                <element signature="n#viewDidAppear:#0;n#MainViewController#0" expanded="true" />
                 <element signature="n#fetchUpdatedInformation#0;n#MainViewController#0" expanded="true" />
                 <element signature="n#handleReserveButton:#0;n#MainViewController#0" expanded="true" />
                 <element signature="n#didUpdateCalendarEvents#0;n#MainViewController#0" expanded="true" />
@@ -69,6 +74,15 @@
                 <element signature="n#eventSucceeded#0;n#MainViewController#0" expanded="true" />
                 <element signature="n#textFieldEndedEditing:#0;n#MainViewController#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="46" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,11 +99,15 @@
       <file leaf-file-name="AvailabilityPlaque.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="9" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0">
+            <state line="45" column="24" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#flip#0;n#AvailabilityPlaque#0" expanded="true" />
                 <element signature="n#awakeFromNib#0;n#AvailabilityPlaque#0" expanded="true" />
-                <element signature="n#reset#0;n#AvailabilityPlaque#0" expanded="true" />
+                <element signature="n#handleReserveButton:#0;n#AvailabilityPlaque#0" expanded="true" />
+                <element signature="n#showDatePicker:#0;n#AvailabilityPlaque#0" expanded="true" />
+                <element signature="e#2005#2094#0" expanded="true" />
+                <element signature="n#dismissDatePicker:#0;n#AvailabilityPlaque#0" expanded="true" />
+                <element signature="e#2428#2506#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,15 +158,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSDateFormatter+JMSimpleDate.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/libs/JMSimpleDate/NSDateFormatter+JMSimpleDate.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="32" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NSDateFormatter+JMSimpleDate.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/libs/JMSimpleDate/NSDateFormatter+JMSimpleDate.m">
           <provider selected="true" editor-type-id="text-editor">
@@ -167,33 +176,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ALCalendarDayEventsView.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="9" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#layoutSubviews#0;n#ALCalendarDayEventsView#0" expanded="true" />
-                <element signature="n#drawRect:#0;n#ALCalendarDayEventsView#0" expanded="true" />
-                <element signature="n#yValueForTime:#0;n#ALCalendarDayEventsView#0" expanded="true" />
-                <element signature="n#packEvents:width:#0;n#ALCalendarDayEventsView#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomTileViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="122" column="28" selection-start="3687" selection-end="3687" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#init#0;n#CustomTileView#0" expanded="true" />
-                <element signature="n#layoutSubviews#0;n#CustomTileView#0" expanded="true" />
-                <element signature="n#initWithNibName:bundle:#0;n#CustomTileViewController#0" expanded="true" />
-                <element signature="n#viewDidLoad#0;n#CustomTileViewController#0" expanded="true" />
-                <element signature="n#tileViewForEvent:#0;n#CustomTileViewController#0" expanded="true" />
-                <element signature="n#didUpdateCalendarEvents#0;n#CustomTileViewController#0" expanded="true" />
-                <element signature="n#currentRoomTypeDidChange#0;n#CustomTileViewController#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -207,25 +194,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Model.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="36" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.4642857">
-              <folding>
-                <element signature="n#sharedModel#0;n#Model#0" expanded="true" />
-                <element signature="n#init#0;n#Model#0" expanded="true" />
-                <element signature="n#isCaliforniaTime#0;n#Model#0" expanded="true" />
-                <element signature="n#nextAvailableStartTime#0;n#Model#0" expanded="true" />
-                <element signature="n#availabilityForRoomType:#0;n#Model#0" expanded="true" />
-                <element signature="n#currentCalendar#0;n#Model#0" expanded="true" />
-                <element signature="n#currentRoomStringIdentifier#0;n#Model#0" expanded="true" />
-                <element signature="n#currentRoomSlug#0;n#Model#0" expanded="true" />
-                <element signature="n#slugForRoomType:#0;n#Model#0" expanded="true" />
-                <element signature="n#stringIdentifierForRoomType:#0;n#Model#0" expanded="true" />
-                <element signature="n#roomTypeForIdentifier:#0;n#Model#0" expanded="true" />
-                <element signature="n#eventsForRoom:#0;n#Model#0" expanded="true" />
-                <element signature="n#currentCalendarEvents#0;n#Model#0" expanded="true" />
-              </folding>
+            <state line="74" column="20" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -239,19 +212,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomPlaque.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="41" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RoomPlaque.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="26" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.0">
+            <state line="77" column="71" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -275,17 +239,17 @@
         <option value="$PROJECT_DIR$/src/operations/BasicOperation.m" />
         <option value="$PROJECT_DIR$/src/eccalendar/operations/SaveEventOperation.m" />
         <option value="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.h" />
-        <option value="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m" />
         <option value="$PROJECT_DIR$/src/libs/JMSimpleDate/NSDate+JMSimpleDate.h" />
-        <option value="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m" />
-        <option value="$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m" />
         <option value="$PROJECT_DIR$/src/libs/JMSimpleDate/NSDate+JMSimpleDate.m" />
         <option value="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m" />
         <option value="$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m" />
-        <option value="$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m" />
         <option value="$PROJECT_DIR$/src/eccalendar/app/AppDelegate.m" />
         <option value="$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m" />
         <option value="$PROJECT_DIR$/src/eccalendar/models/Model.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m" />
+        <option value="$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m" />
       </list>
     </option>
   </component>
@@ -320,7 +284,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -329,324 +292,13 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
+              <option name="myItemId" value="ConferenceApp" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="table" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SVProgressHUD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JMSimpleDate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eccalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eccalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="viewcontrollers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eccalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eccalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eccalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eccalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eccalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ECRooms" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Products" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -659,20 +311,30 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ECRooms">
+  <component name="RunManager" selected="Application.ConferenceApp">
+    <configuration default="false" name="Unnamed" type="AppleRunConfiguration" factoryName="Application" temporary="true" SCHEME_NAME="Unnamed" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="BasicProject" TARGET_NAME="BasicProject" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="BasicProject" RUN_TARGET_NAME="BasicProject" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="ECRooms" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="ECRooms" PROJECT_NAME="ECRooms" TARGET_NAME="ECRooms" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="ECRooms" RUN_TARGET_NAME="ECRooms" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="ConferenceApp" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="ConferenceApp" PROJECT_NAME="ConferenceApp" TARGET_NAME="ConferenceApp" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="ConferenceApp" RUN_TARGET_NAME="ConferenceApp" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.ECRooms" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.ConferenceApp" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Unnamed" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
@@ -702,23 +364,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="807" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="807" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.3701578" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.348637" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.49713057" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1348637" sideWeight="0.6479663" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.258967" sideWeight="0.6479663" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35203367" sideWeight="0.8228121" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11406026" sideWeight="0.6479663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35203367" sideWeight="0.77977043" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35203367" sideWeight="0.17216642" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35203367" sideWeight="0.21520804" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.49713057" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.49713057" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -779,131 +441,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="48" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/libs/JMSimpleDate/JMSimpleDate.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/libs/JMSimpleDate/NSDate+JMSimpleDate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="15" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.3013393">
-          <folding>
-            <element signature="n#hasPassed#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateInDays:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateInHours:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateInMinutes:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateInSeconds:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#tomorrowsDate#0;n#NSDate#0" expanded="true" />
-            <element signature="n#yesterdaysDate#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isOnSameDate:ignoringTimeOfDay:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isInSameWeekAsDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isInSameMonthAsDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isInSameYearAsDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isEarlierThanDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isLaterThanDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isToday#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isTomorrow#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isYesterday#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isThisWeek#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isNextWeek#0;n#NSDate#0" expanded="true" />
-            <element signature="n#wasLastWeek#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isThisMonth#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isThisYear#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isNextYear#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isLastYear#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isWeekend#0;n#NSDate#0" expanded="true" />
-            <element signature="n#isWeekday#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateByAddingDays:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateBySubtractingDays:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateByAddingHours:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateBySubtractingHours:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateByAddingMinutes:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateBySubtractingMinutes:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#dateAtMidnight#0;n#NSDate#0" expanded="true" />
-            <element signature="n#componentsWithOffsetFromDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#minutesAfterDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#secondsAfterDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#minutesBeforeDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#hoursAfterDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#hoursBeforeDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#daysAfterDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#daysBeforeDate:#0;n#NSDate#0" expanded="true" />
-            <element signature="n#nearestHour#0;n#NSDate#0" expanded="true" />
-            <element signature="n#hour#0;n#NSDate#0" expanded="true" />
-            <element signature="n#minute#0;n#NSDate#0" expanded="true" />
-            <element signature="n#seconds#0;n#NSDate#0" expanded="true" />
-            <element signature="n#day#0;n#NSDate#0" expanded="true" />
-            <element signature="n#month#0;n#NSDate#0" expanded="true" />
-            <element signature="n#week#0;n#NSDate#0" expanded="true" />
-            <element signature="n#weekday#0;n#NSDate#0" expanded="true" />
-            <element signature="n#nthWeekday#0;n#NSDate#0" expanded="true" />
-            <element signature="n#year#0;n#NSDate#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/SaveEventOperation.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="72" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="28" selection-start="3687" selection-end="3687" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#init#0;n#CustomTileView#0" expanded="true" />
-            <element signature="n#layoutSubviews#0;n#CustomTileView#0" expanded="true" />
-            <element signature="n#initWithNibName:bundle:#0;n#CustomTileViewController#0" expanded="true" />
-            <element signature="n#viewDidLoad#0;n#CustomTileViewController#0" expanded="true" />
-            <element signature="n#tileViewForEvent:#0;n#CustomTileViewController#0" expanded="true" />
-            <element signature="n#didUpdateCalendarEvents#0;n#CustomTileViewController#0" expanded="true" />
-            <element signature="n#currentRoomTypeDidChange#0;n#CustomTileViewController#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="9" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#flip#0;n#AvailabilityPlaque#0" expanded="true" />
-            <element signature="n#awakeFromNib#0;n#AvailabilityPlaque#0" expanded="true" />
-            <element signature="n#reset#0;n#AvailabilityPlaque#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="47" selection-start="3323" selection-end="3323" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#loadView#0;n#MainViewController#0" expanded="true" />
-            <element signature="n#viewDidLoad#0;n#MainViewController#0" expanded="true" />
-            <element signature="n#fetchUpdatedInformation#0;n#MainViewController#0" expanded="true" />
-            <element signature="n#handleReserveButton:#0;n#MainViewController#0" expanded="true" />
-            <element signature="n#didUpdateCalendarEvents#0;n#MainViewController#0" expanded="true" />
-            <element signature="n#currentRoomTypeDidChange#0;n#MainViewController#0" expanded="true" />
-            <element signature="n#eventFailedWithMessage:#0;n#MainViewController#0" expanded="true" />
-            <element signature="n#eventSucceeded#0;n#MainViewController#0" expanded="true" />
-            <element signature="n#textFieldEndedEditing:#0;n#MainViewController#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="9" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/app/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -915,13 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/libs/JMSimpleDate/NSDate+JMSimpleDate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="30" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/libs/JMSimpleDate/NSDateFormatter+JMSimpleDate.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="14" selection-start="3957" selection-end="3957" vertical-scroll-proportion="0.0">
@@ -929,59 +469,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/libs/JMSimpleDate/NSDateFormatter+JMSimpleDate.h">
+    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+        <state line="106" column="9" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/NSDate+Utils.m">
+    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/CustomTileViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="52" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.8660714">
-          <folding>
-            <element signature="n#toLocalTime#0;n#NSDate#0" expanded="true" />
-            <element signature="n#toGlobalTime#0;n#NSDate#0" expanded="true" />
-          </folding>
+        <state line="122" column="28" selection-start="3687" selection-end="3687" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolkit/ALCalendarDayView/ALCalendarDayEventsView.m">
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/SaveEventOperation.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="9" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#layoutSubviews#0;n#ALCalendarDayEventsView#0" expanded="true" />
-            <element signature="n#drawRect:#0;n#ALCalendarDayEventsView#0" expanded="true" />
-            <element signature="n#yValueForTime:#0;n#ALCalendarDayEventsView#0" expanded="true" />
-            <element signature="n#packEvents:width:#0;n#ALCalendarDayEventsView#0" expanded="true" />
-          </folding>
+        <state line="29" column="72" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eccalendar/operations/GetDataOperation.m">
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/PlaqueView.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="48" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0">
+        <state line="84" column="2" selection-start="1269" selection-end="1921" vertical-scroll-proportion="0.765625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/libs/JMSimpleDate/NSDateFormatter+JMSimpleDate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="32" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.52678573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/RoomPlaque.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="71" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicProject/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="2" selection-start="229" selection-end="229" vertical-scroll-proportion="0.4516129">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/PlaqueView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eccalendar/models/Model.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="36" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.4642857">
+        <state line="74" column="20" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="46" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/views/AvailabilityPlaque.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="24" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#sharedModel#0;n#Model#0" expanded="true" />
-            <element signature="n#init#0;n#Model#0" expanded="true" />
-            <element signature="n#isCaliforniaTime#0;n#Model#0" expanded="true" />
-            <element signature="n#nextAvailableStartTime#0;n#Model#0" expanded="true" />
-            <element signature="n#availabilityForRoomType:#0;n#Model#0" expanded="true" />
-            <element signature="n#currentCalendar#0;n#Model#0" expanded="true" />
-            <element signature="n#currentRoomStringIdentifier#0;n#Model#0" expanded="true" />
-            <element signature="n#currentRoomSlug#0;n#Model#0" expanded="true" />
-            <element signature="n#slugForRoomType:#0;n#Model#0" expanded="true" />
-            <element signature="n#stringIdentifierForRoomType:#0;n#Model#0" expanded="true" />
-            <element signature="n#roomTypeForIdentifier:#0;n#Model#0" expanded="true" />
-            <element signature="n#eventsForRoom:#0;n#Model#0" expanded="true" />
-            <element signature="n#currentCalendarEvents#0;n#Model#0" expanded="true" />
+            <element signature="n#flip#0;n#AvailabilityPlaque#0" expanded="true" />
+            <element signature="n#awakeFromNib#0;n#AvailabilityPlaque#0" expanded="true" />
+            <element signature="n#handleReserveButton:#0;n#AvailabilityPlaque#0" expanded="true" />
+            <element signature="n#showDatePicker:#0;n#AvailabilityPlaque#0" expanded="true" />
+            <element signature="e#2005#2094#0" expanded="true" />
+            <element signature="n#dismissDatePicker:#0;n#AvailabilityPlaque#0" expanded="true" />
+            <element signature="e#2428#2506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eccalendar/viewcontrollers/MainViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="16" selection-start="3518" selection-end="3518" vertical-scroll-proportion="0.19866072">
+          <folding>
+            <element signature="n#loadView#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#viewDidLoad#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#viewDidAppear:#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#fetchUpdatedInformation#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#handleReserveButton:#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#didUpdateCalendarEvents#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#currentRoomTypeDidChange#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#eventFailedWithMessage:#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#eventSucceeded#0;n#MainViewController#0" expanded="true" />
+            <element signature="n#textFieldEndedEditing:#0;n#MainViewController#0" expanded="true" />
           </folding>
         </state>
       </provider>

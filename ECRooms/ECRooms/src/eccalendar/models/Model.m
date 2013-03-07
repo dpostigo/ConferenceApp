@@ -71,6 +71,10 @@
     NSDate *date = [self.currentDate dateByAddingMinutes: 60 - self.currentDate.minute];
     NSArray *events = [self eventsForRoom: self.currentRoomType];
 
+    if ([events count] == 0) {
+        return date;
+    }
+
     if ([events count] == 1) {
         EKEvent *event = [events objectAtIndex: 0];
         if (!event.startDate.hasPassed) {

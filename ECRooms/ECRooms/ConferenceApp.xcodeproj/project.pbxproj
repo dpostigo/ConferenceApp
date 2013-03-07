@@ -88,14 +88,14 @@
 		03150126166EB4960025F1F7 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
 		03150127166EB4960025F1F7 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		033C39E9167C139A004EC2F1 /* Plaque1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Plaque1.xib; path = src/xibs/Plaque1.xib; sourceTree = "<group>"; };
-		0346ACBC166EB0E000A00BC4 /* ECRooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECRooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0346ACBC166EB0E000A00BC4 /* ConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0346ACC0166EB0E000A00BC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0346ACC2166EB0E000A00BC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0346ACC4166EB0E000A00BC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0346ACC8166EB0E000A00BC4 /* ECRooms-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ECRooms-Info.plist"; sourceTree = "<group>"; };
+		0346ACC8166EB0E000A00BC4 /* ConferenceApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConferenceApp-Info.plist"; sourceTree = "<group>"; };
 		0346ACCA166EB0E000A00BC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0346ACCC166EB0E000A00BC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0346ACCE166EB0E000A00BC4 /* ECRooms-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECRooms-Prefix.pch"; sourceTree = "<group>"; };
+		0346ACCE166EB0E000A00BC4 /* ConferenceApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConferenceApp-Prefix.pch"; sourceTree = "<group>"; };
 		0346ACD2166EB0E000A00BC4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0346ACD4166EB0E000A00BC4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0346ACD6166EB0E000A00BC4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -364,7 +364,7 @@
 		0346ACBD166EB0E000A00BC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0346ACBC166EB0E000A00BC4 /* ECRooms.app */,
+				0346ACBC166EB0E000A00BC4 /* ConferenceApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -395,10 +395,10 @@
 			isa = PBXGroup;
 			children = (
 				0347B41816DC247500020C7D /* SVProgressHUD.bundle */,
-				0346ACC8166EB0E000A00BC4 /* ECRooms-Info.plist */,
+				0346ACC8166EB0E000A00BC4 /* ConferenceApp-Info.plist */,
 				0346ACC9166EB0E000A00BC4 /* InfoPlist.strings */,
 				0346ACCC166EB0E000A00BC4 /* main.m */,
-				0346ACCE166EB0E000A00BC4 /* ECRooms-Prefix.pch */,
+				0346ACCE166EB0E000A00BC4 /* ConferenceApp-Prefix.pch */,
 				0346ACD2166EB0E000A00BC4 /* Default.png */,
 				0346ACD4166EB0E000A00BC4 /* Default@2x.png */,
 				0346ACD6166EB0E000A00BC4 /* Default-568h@2x.png */,
@@ -409,9 +409,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0346ACBB166EB0E000A00BC4 /* ECRooms */ = {
+		0346ACBB166EB0E000A00BC4 /* ConferenceApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0346ACDA166EB0E000A00BC4 /* Build configuration list for PBXNativeTarget "ECRooms" */;
+			buildConfigurationList = 0346ACDA166EB0E000A00BC4 /* Build configuration list for PBXNativeTarget "ConferenceApp" */;
 			buildPhases = (
 				0346ACB8166EB0E000A00BC4 /* Sources */,
 				0346ACB9166EB0E000A00BC4 /* Frameworks */,
@@ -422,9 +422,9 @@
 			);
 			dependencies = (
 			);
-			name = ECRooms;
+			name = ConferenceApp;
 			productName = BasicProject;
-			productReference = 0346ACBC166EB0E000A00BC4 /* ECRooms.app */;
+			productReference = 0346ACBC166EB0E000A00BC4 /* ConferenceApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -436,7 +436,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Daniela Postigo";
 			};
-			buildConfigurationList = 0346ACB6166EB0DF00A00BC4 /* Build configuration list for PBXProject "ECRooms" */;
+			buildConfigurationList = 0346ACB6166EB0DF00A00BC4 /* Build configuration list for PBXProject "ConferenceApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -448,7 +448,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0346ACBB166EB0E000A00BC4 /* ECRooms */,
+				0346ACBB166EB0E000A00BC4 /* ConferenceApp */,
 			);
 		};
 /* End PBXProject section */
@@ -625,18 +625,18 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniela Postigo (64Z2RX7572)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicProject/ECRooms-Prefix.pch";
+				GCC_PREFIX_HEADER = "BasicProject/ConferenceApp-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TESTFLIGHT_ENABLED=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BasicProject/ECRooms-Info.plist";
+				INFOPLIST_FILE = "BasicProject/ConferenceApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
 					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
 				);
-				PRODUCT_NAME = ECRooms;
+				PRODUCT_NAME = ConferenceApp;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0E6D3452-69DD-4A8B-A453-84D9BABCB528";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -648,14 +648,14 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Elastic Creative";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicProject/ECRooms-Prefix.pch";
+				GCC_PREFIX_HEADER = "BasicProject/ConferenceApp-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT_ENABLED=1";
-				INFOPLIST_FILE = "BasicProject/ECRooms-Info.plist";
+				INFOPLIST_FILE = "BasicProject/ConferenceApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
 					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
 				);
-				PRODUCT_NAME = ECRooms;
+				PRODUCT_NAME = ConferenceApp;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8172D4AB-CD1C-40D9-8E3C-C0535CFDD574";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -689,13 +689,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BasicProject/ECRooms-Prefix.pch";
-				INFOPLIST_FILE = "BasicProject/ECRooms-Info.plist";
+				GCC_PREFIX_HEADER = "BasicProject/ConferenceApp-Prefix.pch";
+				INFOPLIST_FILE = "BasicProject/ConferenceApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
 					"\"${PROJECT_DIR}/src/toolkit/TestFlight\"/**",
 				);
-				PRODUCT_NAME = ECRooms;
+				PRODUCT_NAME = ConferenceApp;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -704,7 +704,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0346ACB6166EB0DF00A00BC4 /* Build configuration list for PBXProject "ECRooms" */ = {
+		0346ACB6166EB0DF00A00BC4 /* Build configuration list for PBXProject "ConferenceApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0346ACD8166EB0E000A00BC4 /* Debug */,
@@ -714,7 +714,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0346ACDA166EB0E000A00BC4 /* Build configuration list for PBXNativeTarget "ECRooms" */ = {
+		0346ACDA166EB0E000A00BC4 /* Build configuration list for PBXNativeTarget "ConferenceApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0346ACDB166EB0E000A00BC4 /* Debug */,

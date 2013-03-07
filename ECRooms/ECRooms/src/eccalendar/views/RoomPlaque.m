@@ -45,26 +45,42 @@
 }
 
 
-- (IBAction) flip {
-    [super flip];
-
-    NSLog(@"%s", __PRETTY_FUNCTION__);
+- (void) flipToFront {
     BOOL isAvailable = [[Model sharedModel] availabilityForRoomType: [Model sharedModel].currentRoomType];
 
-    if (isAvailable && sliderHider.left != 132) {
-        [UIView animateWithDuration: 0.5 delay: 2.0 options: UIViewAnimationOptionCurveEaseOut animations: ^{
-
-            sliderHider.left = 132;
-        }                completion: nil];
+    if (isAvailable) {
+        sliderHider.left = 13;
+    } else {
+        sliderHider.left = 132;
     }
 
-    else if (!isAvailable && sliderHider.left != 13) {
-        [UIView animateWithDuration: 0.5 delay: 2.0 options: UIViewAnimationOptionCurveEaseOut animations: ^{
-            sliderHider.left = 13;
-        }                completion: nil];
-    }
+    UIViewAnimationOptions options = [front superview] ? UIViewAnimationOptionTransitionFlipFromLeft: UIViewAnimationOptionTransitionFlipFromLeft;
+
+    [UIView transitionWithView: self
+                      duration: 0.5
+                       options: options
+                    animations: ^{
+
+                        if ([back superview]) {
+                            [back removeFromSuperview];
+                        }
+                        [self addSubview: front];
+                    }
+                    completion: ^(BOOL completion) {
+
+                        NSLog(@"isAvailable = %d", isAvailable);
+                        NSLog(@"sliderHider.left = %f", sliderHider.left);
+                        if (isAvailable) {
+                            [UIView animateWithDuration: 0.5 delay: 0.5 options: UIViewAnimationOptionCurveEaseOut animations: ^{
+                                sliderHider.left = 132;
+                            }                completion: nil];
+                        } else {
+                            [UIView animateWithDuration: 0.5 delay: 0.5 options: UIViewAnimationOptionCurveEaseOut animations: ^{
+                                sliderHider.left = 13;
+                            }                completion: nil];
+                        }
+                    }];
 }
-
 
 #pragma mark UIPickerViewDelegate
 

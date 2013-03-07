@@ -60,7 +60,6 @@
                     completion: ^(BOOL completion) {
                         isFlippedToFront = NO;
 
-
                     }];
 }
 

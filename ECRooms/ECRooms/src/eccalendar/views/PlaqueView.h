@@ -21,5 +21,7 @@
 
 @property(nonatomic) BOOL isFlippedToFront;
 - (IBAction) flip;
+- (void) flipToBack;
+- (void) flipToFront;
 
 @end

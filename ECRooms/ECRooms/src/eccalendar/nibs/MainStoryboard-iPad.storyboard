@@ -211,7 +211,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AvailabilityPlaque.h"/>
             <relationships>
                 <relationship kind="action" name="dismissDatePicker:"/>
-                <relationship kind="action" name="handleReserveButton:"/>
                 <relationship kind="action" name="showDatePicker:"/>
                 <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
                 <relationship kind="outlet" name="datePickerView" candidateClass="UIView"/>
@@ -239,7 +238,6 @@
         <class className="MainViewController" superclassName="BasicTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
-                <relationship kind="action" name="handleReserveButton:"/>
                 <relationship kind="outlet" name="availabilityContainer" candidateClass="UIView"/>
                 <relationship kind="outlet" name="calendar" candidateClass="ALCalendarDayView"/>
                 <relationship kind="outlet" name="calendarContainer" candidateClass="UIView"/>

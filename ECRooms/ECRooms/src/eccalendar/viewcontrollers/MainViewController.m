@@ -32,7 +32,9 @@
 @end
 
 
-@implementation MainViewController
+@implementation MainViewController {
+    NSTimer *timer;
+}
 
 
 - (void) loadView {
@@ -44,8 +46,7 @@
     availablePlaque = [[[NSBundle mainBundle] loadNibNamed: @"Plaque2" owner: self options: nil] objectAtIndex: 0];
     [availabilityContainer addSubview: availablePlaque];
 
-    [self fetchUpdatedInformation];
-
+    //    [self fetchUpdatedInformation];
 }
 
 
@@ -71,12 +72,18 @@
 
     calendarView.scrollView.contentOffset = CGPointMake(0, calendarView.eventsView.height - calendarView.scrollView.height);
 
-
     roomPlaque.titleLabel.text = [[_model slugForRoomType: _model.currentRoomType] uppercaseString];
     [availablePlaque.reserveButton addTarget: self action: @selector(handleReserveButton:) forControlEvents: UIControlEventTouchUpInside];
 
     [self subscribeTextField: availablePlaque.eventTextField];
-    [self performSelector: @selector(fetchUpdatedInformation) withObject: nil afterDelay: 5.0];
+}
+
+
+- (void) viewDidAppear: (BOOL) animated {
+    [super viewDidAppear: animated];
+
+    timer = [NSTimer scheduledTimerWithTimeInterval: 60.0 target: self selector: @selector(fetchUpdatedInformation) userInfo: nil repeats: YES];
+    [timer fire];
 }
 
 
@@ -88,7 +95,6 @@
 
 
 - (IBAction) handleReserveButton: (id) sender {
-
     [availablePlaque.eventTextField resignFirstResponder];
     [_queue addOperation: [[SaveEventOperation alloc] init]];
 }
@@ -104,6 +110,7 @@
 - (void) calendarsNotFound {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Elastic Calendars Not Found" message: @"You do not have any calendars associated with the EC meeting spaces." delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
     [alertView show];
+    [timer invalidate];
 }
 
 
@@ -132,7 +139,7 @@
         RoomType roomType = [_model roomTypeForIdentifier: identifier];
         label.text = [_model slugForRoomType: roomType];
 
-        BOOL isAvailable = [_model availabilityForRoomType: roomType];
+        isAvailable = [_model availabilityForRoomType: roomType];
         UIImageView *imageView = [availablePlaque.imageViews objectAtIndex: index];
 
         if (isAvailable) {
@@ -146,17 +153,11 @@
 
 
 - (void) eventFailedWithMessage: (NSString *) message {
-
     [SVProgressHUD showErrorWithStatus: message];
-
-    //
-    //    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Could Not Create Event" message: message delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
-    //    [alertView show];
 }
 
 
 - (void) eventSucceeded {
-
     [SVProgressHUD showSuccessWithStatus: @"Success!" duration: 2.0];
     [availablePlaque reset];
 }
